@@ -1,0 +1,161 @@
+
+.body{
+  background-color: white;
+}
+
+.custom-nav-spacing .nav-link {
+  margin-right: 38px;
+  margin-left: 30px;
+  font-size: 18px;
+  font-family: "Poppins", serif;
+  color: black;
+ }
+.custom-nav-spacing .nav-link:last-child {
+  margin-right: 0;
+}
+
+.nav{
+  background-color: white;
+}
+
+.h1 .p{
+  font-family: "Poppins", serif;
+  font-weight: 10px;
+  font-size: 80px;
+}
+
+.custom-card {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.custom-card .btn {
+  border-radius: 50px;
+}
+
+
+.testimonial-card {
+  max-width: 300px;
+  margin: 0 auto;
+  border: none;
+}
+
+.stars {
+  margin-top: 10px;
+  border-radius: 8px; 
+}
+
+.home-m{
+  color: black;
+  display: block;
+  padding-bottom: 5%;
+  margin-top: 20px;
+  font-size: 60px; 
+  background-image: url();
+}
+
+.h1-home{
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  font-size: 70px;
+  text-align: left;
+}
+
+.h1-nosotros{
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  font-size: 45px; 
+  padding-bottom: 20px ;
+}
+.p-nosotros{
+  font-family: "Poppins", serif;
+  font-size: 25px; 
+  text-align: right;
+}
+
+.h2-proyectos{
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  text-align: center; 
+  padding-bottom: 30px;
+}
+
+.content-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-nosotros {
+ font-family: "Poppins", serif;
+  max-width: 400px;
+  margin-left: 5px;
+}
+
+.p-nosotros {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.fabrica-home {
+  font-family: "Poppins", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+}
+.nuestraf-h1{
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  font-size: 45px;
+  padding-bottom: 10px;
+}
+
+.content-fabrica {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text-fabrica {
+  font-family: "Poppins", serif;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.imagen-fabrica {
+  flex: 1;
+  max-width: 650px;
+  height: auto;
+}
+
+.p-fabrica {
+  font-family: "Poppins", serif;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+.boton-p{
+  background-color: #b75145 !important; /* Color personalizado */
+  color: white !important; /* Color del texto */
+  border: none !important;
+  padding: 10px 20px !important;
+  font-family: "Poppins", serif;
+  font-size: 20px !important;
+  border-radius: 5px !important;
+}
