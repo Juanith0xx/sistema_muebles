@@ -14,7 +14,7 @@ const Nosotros = () => {
         />
         <div className="text-nosotros">
           <p className="p-nosotros">
-            Con más de una década de experiencia en la industria inmobiliaria, sé que tengo lo necesario para encontrar la casa de tus sueños. No hay nada imposible.
+            Con más de dos década de experiencia en la industria inmobiliaria, sé que tengo lo necesario para encontrar la casa de tus sueños. No hay nada imposible.
           </p>
           <Button className="boton-p">Consultanos ya</Button>
         </div>

@@ -16,12 +16,12 @@ const cardsData = [
     image: '/img/clinica-bio-bio.png',
   },
   {
-    title: 'Clínica Santa María',
-    image: '/img/clinica-santamaria.jpg',
+    title: 'ACHS Los Andes',
+    image: '/img/achslosande.jpg',
   },
   {
-    title: 'ACHS Los Andes',
-    image: '/img/achs-losandes.jpg',
+    title: 'Clínica Santa María',
+    image: '/img/clinica-santamaria.jpg',    
   },
 ];
 
@@ -38,13 +38,13 @@ function App() {
     <>
       <MyNavbar />
     
-    <Container>
+    <Container id="home">
       <div>
         <Home />
       </div>
     </Container>
 
-    <Container>
+    <Container id='nosotros'>
       <div>
       <Nosotros />
       </div>
@@ -65,15 +65,15 @@ function App() {
         </Row>
       </Container>
 
-      <Container>
+      <Container id='fabrica'>
         <div>
           <NuestraFabrica />
         </div>  
       </Container>
 
-      <Container>
+      <Container id='proyectos'>
       <div>
-      <h2>Clientes Satisfechos</h2>
+      <h2 className='clientes-h'>Nuestros Clientes</h2>
       </div>
       <div>
       <ClientesSatisfechos
@@ -83,7 +83,7 @@ function App() {
       />
     </div>
 
-    <Container>
+    <Container id='contacto'>
       <div>
         <Contacto />
       </div>
