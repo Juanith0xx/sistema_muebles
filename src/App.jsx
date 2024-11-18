@@ -8,6 +8,7 @@ import NuestraFabrica from './assets/components/NuestraFabrica';
 import ClientesSatisfechos from './assets/components/ClientesSatisfechos';
 import Contacto from './assets/components/Contacto';
 import Home from './assets/components/Home';
+import Footer from './assets/components/Footer';
 
 
 const cardsData = [
@@ -86,6 +87,12 @@ function App() {
     <Container id='contacto'>
       <div>
         <Contacto />
+      </div>
+    </Container>
+    
+    <Container>
+      <div>
+        <Footer />
       </div>
     </Container>
 

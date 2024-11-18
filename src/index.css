@@ -1,6 +1,6 @@
-
 .body{
   background-color: black;
+  padding-top: 56px;
 }
 
 .custom-nav-spacing .nav-link {
@@ -9,8 +9,6 @@
   font-size: 18px;
   font-family: "Poppins", serif;
   color: black;
-  padding-top: 25px;
-  padding-bottom: 20px;
  }
 .custom-nav-spacing .nav-link:last-child {
   margin-right: 0;
@@ -18,6 +16,17 @@
 
 .nav{
   background-color: white;
+}
+.nav.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050; /* Ajusta según sea necesario */
+}
+
+/* Agrega padding-top al cuerpo para que no se solape el contenido */
+body {
+  padding-top: 60px; /* Ajusta el valor según la altura de tu navbar */
 }
 
 .h1 .p{
@@ -53,11 +62,11 @@
 }
 
 .home-m{
-  color: black;
+  color: white;
   display: block;
-  margin-top: 50px;
+  margin-top: 60px;
   font-size: 60px; 
-  background-image: url(/public/img/fondo.jpg);
+  background-image: url(/public/img/forus.jpg);
   background-size: cover;
   background-position: center; 
   width: auto; 
@@ -67,8 +76,9 @@
   padding-bottom: 5%;
   padding-left: 20px;
   margin-bottom: 10px;
-  padding-top: 20px;
+  padding-top: 80px;
 }
+
 
 .h1-home{
   font-family: "Poppins", serif;
@@ -82,10 +92,11 @@
   font-weight: bold;
   font-size: 45px; 
   padding-bottom: 20px ;
+  padding-top: 10%;
 }
 .p-nosotros{
   font-family: "Poppins", serif;
-  font-size: 25px; 
+  font-size: 10px; 
   text-align: right;
 }
 
@@ -109,7 +120,7 @@
 }
 
 .p-nosotros {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -125,6 +136,7 @@
   font-weight: bold;
   font-size: 45px;
   padding-bottom: 10px;
+  padding-top: 10%;
 }
 
 .content-fabrica {
@@ -209,6 +221,52 @@
   font-size: 45px;
 }
 
+.site-footer {
+  background-color: #fff;
+  color: black;
+  padding: 14px;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Poppins", serif;
+  text-align: left;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+  margin-bottom: 15px;
+  font-family: "Poppins", serif;
+}
+
+.footer-links a,
+.footer-social a {
+  color: black;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 30px;
+  
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+  text-decoration: underline;
+  font-family: "Poppins", serif;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  font-family: "Poppins", serif;
+}
+
+.footer-h5{
+  font-family: "Poppins", serif;
+  font-weight: bold;
+
+}
+.footer-p{
+  font-family: "Poppins", serif;
+  font-size: 15px;
+}
 
 .boton-p{
   background-color: #b75145 !important; /* Color personalizado */
