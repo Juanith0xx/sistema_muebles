@@ -9,7 +9,6 @@ function CustomCard({ title, image, description, projectId }) {
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{description}</Card.Text>
-        {/* Enlace para abrir el detalle en una nueva pestaña */}
         <a 
           href={`/proyecto/${projectId}`} 
           target="_blank"  // Esto indica que debe abrirse en una nueva pestaña
@@ -20,6 +19,5 @@ function CustomCard({ title, image, description, projectId }) {
       </Card.Body>
     </Card>
   );
-}
-
+};
 export default CustomCard;

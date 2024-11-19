@@ -187,7 +187,8 @@ body {
   font-family: "Poppins", serif;
   font-weight: bold;
   font-size: 45px;
-  padding-bottom: 10px;
+  padding-top: 6%;
+  padding-bottom: 20px;
 }
 .carousel-title{
   font-family: "Poppins", serif;
@@ -266,6 +267,30 @@ body {
   font-family: "Poppins", serif;
   font-size: 15px;
 }
+
+
+/* Css de proyectos*/
+
+.project-title{
+  font-family: "Poppins", serif;
+  font-size: 30px;
+  padding-top: 30px;
+  font-weight: bold;
+  margin-left: 2%;
+}
+
+.project-description {
+  font-family: "Poppins", serif;
+  font-size: 20px;
+  margin-left: 2%;
+}
+
+.project-gallery{
+  margin-left: 2%
+}
+
+
+
 
 .boton-p{
   background-color: #b75145 !important; /* Color personalizado */
