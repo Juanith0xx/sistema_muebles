@@ -21,6 +21,7 @@ function MyNavbar() {
           <Nav className="me-auto custom-nav-spacing">
             <Nav.Link href="#nosotros">Nosotros</Nav.Link>
             <Nav.Link href="#proyectos">Nuestros Clientes</Nav.Link>
+            <Nav.Link href="#proyectos destacados">Nuestros Proyectos</Nav.Link>
             <Nav.Link href="#fabrica">Nuestra Fábrica</Nav.Link>
             <Nav.Link href="#contacto">Contacto</Nav.Link>
           </Nav>

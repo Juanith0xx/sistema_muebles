@@ -1,5 +1,3 @@
-
-
 const Proyectos = () => {
   return (
     <div>

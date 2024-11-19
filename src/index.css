@@ -99,14 +99,13 @@ body {
   font-size: 10px; 
   text-align: right;
 }
-
 .h2-proyectos{
   font-family: "Poppins", serif;
   font-weight: bold;
   text-align: center; 
   padding-bottom: 30px;
+  padding-top: 100px;
 }
-
 .content-nosotros {
   display: flex;
   align-items: center;

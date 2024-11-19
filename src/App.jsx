@@ -51,7 +51,7 @@ function App() {
       </div>
     </Container>
 
-      <Container className="my-5">
+      <Container id='proyectos destacados' className="my-5">
         <h2 className="h2-proyectos">Proyectos Destacados</h2>
         <Row className="justify-content-center">
           {cardsData.map((card, index) => (

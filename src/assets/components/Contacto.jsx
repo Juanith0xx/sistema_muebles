@@ -20,15 +20,14 @@ function ContactForm() {
     // Configura los datos del correo
     const templateParams = {
       from_name: formData.name,
-      from_email: formData.email,
-      to_email: 'contacto@sistemamuebles.cl',
+      from_email: formData.email, // Este campo debe coincidir
       message: formData.message,
     };
 
     // Envía el correo usando EmailJS
     emailjs.send(
       'service_c60cjid', // Service ID
-      'template_q1s5hjr', // Template ID
+      'template_m615mel', // Template ID
       templateParams,
       'kEfgki1uhnRq31pjs' // Public Key (API User ID)
     )
