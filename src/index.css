@@ -1,41 +1,83 @@
-.body{
+/* Estilo general */
+body {
   background-color: black;
+  font-family: "Poppins", serif;
+  margin: 0;
   padding-top: 56px;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Navbar */
+.nav {
+  background-color: white;
+}
+
+.nav.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
 }
 
 .custom-nav-spacing .nav-link {
   margin-right: 38px;
   margin-left: 30px;
-  font-size: 18px;
-  font-family: "Poppins", serif;
+  font-size: 19px;
   color: black;
- }
+  font-family: "Poppins", serif;
+  font-weight: bold;
+
+}
+
 .custom-nav-spacing .nav-link:last-child {
   margin-right: 0;
 }
 
-.nav{
-  background-color: white;
-}
-.nav.fixed-top {
-  position: fixed;
-  top: 0;
+/* Home section */
+.home-m {
+  color: white;
+  display: block;
+  margin-top: 60px;
+  font-size: 3.5vw; /* Tamaño de fuente relativo */
+  font-weight: bold;
+  background-image: url(/img/forus.jpg);
+  background-size: cover;
+  background-position: center;
   width: 100%;
-  z-index: 1050; /* Ajusta según sea necesario */
+  height: auto;
+  padding: 10% 5% 5% 5%; /* Relleno flexible */
+  text-align: center;
 }
 
-/* Agrega padding-top al cuerpo para que no se solape el contenido */
-body {
-  padding-top: 60px; /* Ajusta el valor según la altura de tu navbar */
+.h1-home {
+  font-weight: bold;
+  font-size: 3.5vw;
+  text-align: left;
 }
 
-.h1 .p{
+/* Títulos y contenido en proyectos */
+.h2-proyectos,
+.project-title {
+  font-size: 2.9vw;
   font-family: "Poppins", serif;
-  font-weight: 10px;
-  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 9%;
 }
 
+.project-description {
+  font-size: 4vw;
+}
+
+/* Card personalizada */
 .custom-card {
+  width: 100%;
+  height: auto;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -43,201 +85,113 @@ body {
 .custom-card img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  width: 100%;
+  height: auto;
 }
 
 .custom-card .btn {
   border-radius: 50px;
 }
 
+/* Ajustes de tamaño de imagen */
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
 
-.testimonial-card {
-  max-width: 300px;
+.carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
   margin: 0 auto;
-  border: none;
 }
 
-.stars {
-  margin-top: 10px;
-  border-radius: 8px; 
-}
-
-.home-m{
-  color: white;
-  display: block;
-  margin-top: 60px;
-  font-size: 60px; 
-  background-image: url(/public/img/forus.jpg);
-  background-size: cover;
-  background-position: center; 
-  width: auto; 
-  height: auto; 
-  margin: 0; 
-  padding: 0;
-  padding-bottom: 5%;
-  padding-left: 20px;
-  margin-bottom: 10px;
-  padding-top: 80px;
-}
-
-
-.h1-home{
-  font-family: "Poppins", serif;
+/* Sección Nosotros */
+.h1-nosotros {
+  font-size: 2.9vw;
   font-weight: bold;
-  font-size: 70px;
-  text-align: left;
-}
-
-.h1-nosotros{
-  font-family: "Poppins", serif;
-  font-weight: bold;
-  font-size: 45px; 
-  padding-bottom: 20px ;
-  padding-top: 10%;
-}
-.p-nosotros{
-  font-family: "Poppins", serif;
-  font-size: 10px; 
-  text-align: right;
-}
-.h2-proyectos{
-  font-family: "Poppins", serif;
-  font-weight: bold;
-  text-align: center; 
-  padding-bottom: 30px;
-  padding-top: 100px;
-}
-.content-nosotros {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.text-nosotros {
- font-family: "Poppins", serif;
-  max-width: 400px;
-  margin-left: 5px;
+  padding-bottom: 25px;
+  padding-top: 6%;
 }
 
 .p-nosotros {
-  font-size: 20px;
-  line-height: 1.5;
+  font-size: 1.1vw;
+  font-family: "Poppins", serif;
+  text-align: right;
+  padding-top: 20px;
 }
 
-.fabrica-home {
-  font-family: "Poppins", serif;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  padding: 20px;
-}
-.nuestraf-h1{
-  font-family: "Poppins", serif;
+/* Fábrica */
+.nuestraf-h1 {
+  font-size: 2.9vw;
   font-weight: bold;
-  font-size: 45px;
+  font-family: "Poppins", serif;
   padding-bottom: 10px;
-  padding-top: 10%;
+  margin-top: 9%;
+}
+
+.clientes-h{
+  font-size: 2.9vw;
+  font-weight: bold;
+  font-family: "Poppins", serif;
+  margin-bottom: 50px;
+  padding-top: 9%;
 }
 
 .content-fabrica {
   display: flex;
-  align-items: left;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  max-width: 1200px;
   width: 100%;
 }
 
-/*.text-fabrica {
-  font-family: "Poppins", serif;
-  flex: 1;
-  padding-right: 20px;
-}*/
-
 .imagen-fabrica {
-  display: block; /* Asegura que la imagen se comporte como un elemento de bloque */ 
-  margin-left: auto; /* Centra la imagen horizontalmente */ 
-  margin-right: auto; /* Centra la imagen horizontalmente */ 
-  max-width: 650px; 
+  width: 100%;
+  max-width: 650px;
   height: auto;
+  margin: 0 auto;
 }
 
 .p-fabrica {
-  font-family: "Poppins", serif;
-  font-size: 30px;
-  padding-bottom: 10px;
+  font-size: 4vw;
 }
 
-.custom-card {
-  width: 100%;
-  height: 100%;
+.text-fabrica {
+  font-size: 4vw;
 }
 
-.card-image {
-  width: 500px;
-  height: 375px;
-  object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
-  border-radius: 12px; /* Opcional: añade bordes redondeados */
-}
-
-.carousel-image {
-  width: 165px;
-  height: 168px;
-  object-fit: cover;
-  margin: 0 auto; /* Centrar la imagen dentro del carrusel */
-}
-
-.clientes-h{
-  font-family: "Poppins", serif;
-  font-weight: bold;
-  font-size: 45px;
-  padding-top: 6%;
-  padding-bottom: 20px;
-}
-.carousel-title{
-  font-family: "Poppins", serif;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-}
-
-.carousel-description{
-  font-family: "Poppins", serif;
-  font-size: 18px;
-  text-align: center;
-  padding-bottom: 25px;
-}
-
-.contact-h{
-  padding-bottom: 10px;
-}
 .contact-h1{
-  font-family: "Poppins", serif;
+  font-size: 2.9vw;
   font-weight: bold;
-  padding-top: 20px;
-
-
+  font-family: "Poppins", serif;
+  padding-top: 9%;
 }
 
 .b-contact{
   padding-top: 10px;
-  padding-bottom: 20px;
-  font-size: 45px;
 }
 
+/* Botones */
+.boton-p, .boton-p-p {
+  background-color: #b75145 !important;
+  color: white !important;
+  border: none !important;
+  font-family: "Poppins", serif;
+  font-size: 1vw !important;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+}
+
+/* Footer */
 .site-footer {
   background-color: #fff;
   color: black;
   padding: 14px;
-  text-align: center;
-  font-size: 14px;
-  font-family: "Poppins", serif;
+  font-size: 1vw;
   text-align: left;
-}
-
-.footer-info,
-.footer-links,
-.footer-social {
-  margin-bottom: 15px;
-  font-family: "Poppins", serif;
 }
 
 .footer-links a,
@@ -245,72 +199,66 @@ body {
   color: black;
   margin: 0 8px;
   text-decoration: none;
-  font-size: 30px;
-  
+  font-size: 2vw;
 }
 
 .footer-links a:hover,
 .footer-social a:hover {
   text-decoration: underline;
-  font-family: "Poppins", serif;
 }
 
-.footer-copyright {
-  font-size: 12px;
-  font-family: "Poppins", serif;
+/* Media Queries */
+@media (max-width: 767px) {
+  .home-m {
+    padding-top: 15%;
+    font-size: 5rem;
+  }
+
+  .h1-home {
+    font-size: 6rem;
+  }
+
+  .h2-proyectos {
+    font-size: 4.5vw;
+  }
+
+  .p-nosotros, .project-description, .p-fabrica {
+    font-size: 1rem;
+  }
+
+  .custom-nav-spacing .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .carousel-image {
+    width: 90%;
+  }
+
+  .footer-links a,
+  .footer-social a {
+    font-size: 2.5rem;
+  }
 }
 
-.footer-h5{
-  font-family: "Poppins", serif;
-  font-weight: bold;
+@media (max-width: 991px) {
+  .home-m {
+    padding-top: 15%;
+    font-size: 6vw;
+  }
 
-}
-.footer-p{
-  font-family: "Poppins", serif;
-  font-size: 15px;
-}
+  .h1-home {
+    font-size: 8vw;
+  }
 
+  .h2-proyectos {
+    font-size: 2.5rem;
+  }
 
-/* Css de proyectos*/
+  .project-description {
+    font-size: 3.5vw;
+  }
 
-.project-title{
-  font-family: "Poppins", serif;
-  font-size: 30px;
-  padding-top: 30px;
-  font-weight: bold;
-  margin-left: 2%;
-}
-
-.project-description {
-  font-family: "Poppins", serif;
-  font-size: 20px;
-  margin-left: 2%;
-}
-
-.project-gallery{
-  margin-left: 2%
-}
-
-
-
-
-.boton-p{
-  background-color: #b75145 !important; /* Color personalizado */
-  color: white !important; /* Color del texto */
-  border: none !important;
-  padding: 10px 20px !important;
-  font-family: "Poppins", serif;
-  font-size: 20px !important;
-  border-radius: 5px !important;
-}
-
-.boton-p-p{
-  background-color: #b75145 !important; /* Color personalizado */
-  color: white !important; /* Color del texto */
-  border: none !important;
-  padding: 10px 18px  !important;
-  font-family: "Poppins", serif;
-  font-size: 14px !important;
-  border-radius: 5px !important;
-
+  .carousel-image {
+    width: 80%;
+  }
 }

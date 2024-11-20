@@ -12,13 +12,12 @@ import Home from './assets/components/Home';
 import Footer from './assets/components/Footer';
 import ProjectDetails from './assets/components/ProjectDetails';
 
-
 const cardsData = [
   {
     projectId: 1,
     title: 'Clínica Bio Bio',
     image: '/img/clinica-bio-bio.png',
-    },
+  },
   {
     projectId: 2,
     title: 'ACHS Los Andes',
@@ -61,7 +60,7 @@ function App() {
                 </h2>
                 <Row className="justify-content-center">
                   {cardsData.map((card) => (
-                    <Col md={4} key={card.projectId}>
+                    <Col xs={12} sm={6} md={4} key={card.projectId}>
                       <CustomCard
                         title={card.title}
                         image={card.image}
