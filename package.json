@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "homepage": "sistemamuebles.cl",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "emailjs-com": "^3.2.0",

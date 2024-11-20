@@ -1,4 +1,4 @@
-import Button from 'react-bootstrap/Button';
+/*import Button from 'react-bootstrap/Button';*/
 
 const NuestraFabrica = () => {
   return (
@@ -7,9 +7,8 @@ const NuestraFabrica = () => {
       <div className='content-fabrica'>
         <div className='text-fabrica'>
           <p className="p-fabrica">
-            Con más de una década de experiencia en la industria inmobiliaria, sé que tengo lo necesario para encontrar la casa de tus sueños. No hay nada imposible.
           </p>
-          <Button className='boton-p'>Saber Más</Button>
+         { /*<Button className='boton-p'>Saber Más</Button>*/}
         </div>
         <img
           src="/img/nuestra fabrica.jpg"

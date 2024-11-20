@@ -6,7 +6,7 @@ const Nosotros = () => {
       <h1 className="h1-nosotros">Nosotros</h1>
       <div className="content-nosotros">
         <img
-          src="/img/Nosotros.JPG"
+          src="/img/Nosotros.jpg"
           alt="Logo"
           width="650"
           height="500"

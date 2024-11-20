@@ -11,26 +11,23 @@ import Contacto from './assets/components/Contacto';
 import Home from './assets/components/Home';
 import Footer from './assets/components/Footer';
 import ProjectDetails from './assets/components/ProjectDetails';
-import { Link } from 'react-router-dom';
+
 
 const cardsData = [
   {
     projectId: 1,
     title: 'Clínica Bio Bio',
     image: '/img/clinica-bio-bio.png',
-    description: 'Detalles de la Clínica Bio Bio',
-  },
+    },
   {
     projectId: 2,
     title: 'ACHS Los Andes',
     image: '/img/achslosande.jpg',
-    description: 'Detalles de ACHS Los Andes',
   },
   {
     projectId: 3,
     title: 'Clínica Santa María',
     image: '/img/clinica-santamaria.jpg',
-    description: 'Detalles de la Clínica Santa María',
   },
 ];
 
@@ -100,7 +97,6 @@ function App() {
           }
         />
 
-        {/* Ruta para los detalles del proyecto */}
         <Route path="/proyecto/:projectId" element={<ProjectDetails />} />
       </Routes>
     </Router>

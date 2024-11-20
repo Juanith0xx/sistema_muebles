@@ -146,15 +146,17 @@ body {
   width: 100%;
 }
 
-.text-fabrica {
+/*.text-fabrica {
   font-family: "Poppins", serif;
   flex: 1;
   padding-right: 20px;
-}
+}*/
 
 .imagen-fabrica {
-  flex: 1;
-  max-width: 650px;
+  display: block; /* Asegura que la imagen se comporte como un elemento de bloque */ 
+  margin-left: auto; /* Centra la imagen horizontalmente */ 
+  margin-right: auto; /* Centra la imagen horizontalmente */ 
+  max-width: 650px; 
   height: auto;
 }
 
