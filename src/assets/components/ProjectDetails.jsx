@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // Estilos de Lightbox
 import './ProjectDetails.css'; // Tus propios estilos opcionales
@@ -7,19 +7,17 @@ import './ProjectDetails.css'; // Tus propios estilos opcionales
 const projectData = {
   1: {
     title: 'Proyecto Clínica Bio Bio',
+    description: 'Descripción detallada del Proyecto Clínica Bio Bio.',
     images: [
-      '/public/img/fondo.jpg',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG'
+      '/img/fondo.jpg',
+      '/img/Clinica Biobio.JPG',
+      '/img/Clinica Biobio.JPG',
+      '/img/Clinica Biobio.JPG',
     ],
   },
   2: {
     title: 'ACHS Los Andes',
+    description: 'Descripción detallada del proyecto ACHS Los Andes.',
     images: [
       '/img/proyecto2/imagen1.jpg',
       '/img/proyecto2/imagen2.jpg',
@@ -28,6 +26,7 @@ const projectData = {
   },
   3: {
     title: 'Clínica Santa María',
+    description: 'Descripción detallada del Proyecto Clínica Santa María.',
     images: [
       '/img/proyecto3/imagen1.jpg',
       '/img/proyecto3/imagen2.jpg',
@@ -84,6 +83,9 @@ const ProjectDetails = () => {
           }
         />
       )}
+
+      {/* Enlace para volver a la página principal */}
+      <Link to="/" className="boton-p-p">Volver a la página principal</Link>
     </div>
   );
 };

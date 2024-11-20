@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Actualiza aquí
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import CustomCard from './assets/components/CustomCard';
 import MyNavbar from './assets/components/Navbar';
 import Nosotros from './assets/components/Nosotros';
@@ -11,6 +11,7 @@ import Contacto from './assets/components/Contacto';
 import Home from './assets/components/Home';
 import Footer from './assets/components/Footer';
 import ProjectDetails from './assets/components/ProjectDetails';
+import { Link } from 'react-router-dom';
 
 const cardsData = [
   {
