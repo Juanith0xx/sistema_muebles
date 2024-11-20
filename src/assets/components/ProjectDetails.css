@@ -23,7 +23,7 @@
 /* Estilos para las imágenes en la galería */
 .project-image {
   width: 300px;  /* Aumenta el tamaño de la imagen */
-  height: 200px; /* Mantén una altura adecuada */
+  height: 300px; /* Mantén una altura adecuada */
   object-fit: cover;
   cursor: pointer;
   border-radius: 5px;

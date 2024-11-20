@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // Estilos de Lightbox
 import './ProjectDetails.css'; // Tus propios estilos opcionales
@@ -7,31 +7,32 @@ import './ProjectDetails.css'; // Tus propios estilos opcionales
 const projectData = {
   1: {
     title: 'Proyecto Clínica Bio Bio',
+
     images: [
-      '/public/img/fondo.jpg',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG',
-      '/public/img/Clinica Biobio.JPG'
+      '/img/DSC02841.JPG',
+      '/img/DSC02845.JPG',
+      '/img/IMG-4565.JPG',
+      '/img/IMG-4624.JPG',
+      '/img/IMG-4632.JPG',
+      '/img/IMG-4639.JPG',
+      '/img/IMG-4642.JPG',
+      '/img/IMG-4648.JPG',
     ],
   },
   2: {
     title: 'ACHS Los Andes',
     images: [
-      '/img/proyecto2/imagen1.jpg',
-      '/img/proyecto2/imagen2.jpg',
-      '/img/proyecto2/imagen3.jpg',
+      '/img/IMG_1382.JPG',
+      '/img/IMG_1384.JPG',
+      '/img/IMG_1395.JPG',
+      '/img/IMG_1398.JPG',
     ],
   },
   3: {
     title: 'Clínica Santa María',
     images: [
-      '/img/proyecto3/imagen1.jpg',
-      '/img/proyecto3/imagen2.jpg',
-      '/img/proyecto3/imagen3.jpg',
+      '/img/IMG-20230502-WA0004.jpg',
+      '/img/IMG-20230502-WA0003.jpg',
     ],
   },
 };
@@ -84,6 +85,9 @@ const ProjectDetails = () => {
           }
         />
       )}
+
+      {/* Enlace para volver a la página principal */}
+      <Link to="/" className="boton-p-p">Volver a la página principal</Link>
     </div>
   );
 };
