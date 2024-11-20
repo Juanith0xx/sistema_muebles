@@ -7,8 +7,6 @@ import './ProjectDetails.css'; // Tus propios estilos opcionales lll
 const projectData = {
   1: {
     title: 'Proyecto Clínica Bio Bio',
-<<<<<<< HEAD
-
     images: [
       '/img/DSC02841.JPG',
       '/img/DSC02845.JPG',
@@ -18,19 +16,11 @@ const projectData = {
       '/img/IMG-4639.JPG',
       '/img/IMG-4642.JPG',
       '/img/IMG-4648.JPG',
-=======
-    description: 'Descripción detallada del Proyecto Clínica Bio Bio.',
-    images: [
-      '/img/fondo.jpg',
-      '/img/Clinica Biobio.JPG',
-      '/img/Clinica Biobio.JPG',
-      '/img/Clinica Biobio.JPG',
->>>>>>> c9ea5d40331d4d648a522e0c393a4fa17c3961c5
+
     ],
   },
   2: {
     title: 'ACHS Los Andes',
-    description: 'Descripción detallada del proyecto ACHS Los Andes.',
     images: [
       '/img/IMG_1382.JPG',
       '/img/IMG_1384.JPG',
@@ -40,7 +30,6 @@ const projectData = {
   },
   3: {
     title: 'Clínica Santa María',
-    description: 'Descripción detallada del Proyecto Clínica Santa María.',
     images: [
       '/img/IMG-20230502-WA0004.jpg',
       '/img/IMG-20230502-WA0003.jpg',
