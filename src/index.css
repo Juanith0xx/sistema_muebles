@@ -211,10 +211,10 @@ body {
 
 .dropdown-menu{
   font-size: 20px !important; 
-  color: white !important;
+  color: #f1f1f1 !important;
   border: none !important;
   font-family: "Poppins", serif;
-  border-radius: 5px !important;
+  border-radius: 25px !important;
   padding: 10px 20px !important;
 }
 
