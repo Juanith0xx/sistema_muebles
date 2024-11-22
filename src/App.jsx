@@ -11,6 +11,7 @@ import Contacto from './assets/components/Contacto';
 import Home from './assets/components/Home';
 import Footer from './assets/components/Footer';
 import ProjectDetails from './assets/components/ProjectDetails';
+import Map from './assets/components/Map';
 
 const cardsData = [
   {
@@ -87,6 +88,10 @@ function App() {
 
               <Container id="contacto">
                 <Contacto />
+              </Container>
+              
+              <Container>
+                <Map />
               </Container>
 
               <Container>

@@ -7,6 +7,7 @@ function ContactForm() {
     name: '',
     email: '',
     message: '',
+    phone: '',
   });
 
   const handleChange = (e) => {
@@ -22,6 +23,7 @@ function ContactForm() {
       from_name: formData.name,
       from_email: formData.email, // Este campo debe coincidir
       message: formData.message,
+      from_phone: formData.phone,
     };
 
     // Envía el correo usando EmailJS
@@ -53,7 +55,7 @@ function ContactForm() {
           <Form.Control
             type="text"
             name="name"
-            placeholder="Ingresa tu nombre"
+            placeholder="Ingresa tu nombre *"
             value={formData.name}
             onChange={handleChange}
           />
@@ -64,8 +66,19 @@ function ContactForm() {
           <Form.Control
             type="email"
             name="email"
-            placeholder="Ingresa tu email"
+            placeholder="Ingresa tu correo electronico *"
             value={formData.email}
+            onChange={handleChange}
+          />
+        </Form.Group>
+
+        <Form.Group controlId="formPhone" style={{ marginBottom: '10px' }}>
+          <Form.Label><b>Teléfono</b></Form.Label>
+          <Form.Control
+            type="phone"
+            name="phone"
+            placeholder="Ingresa su numero de contacto *"
+            value={formData.phone}
             onChange={handleChange}
           />
         </Form.Group>
