@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Dropdown } from 'react-bootstrap';
 
 
 function MyNavbar() {
@@ -23,6 +24,16 @@ function MyNavbar() {
             <Nav.Link href="#proyectos">Nuestros Clientes</Nav.Link>
             <Nav.Link href="#proyectos destacados">Nuestros Proyectos</Nav.Link>
             <Nav.Link href="#fabrica">Nuestra Fábrica</Nav.Link>
+            <Dropdown>
+          <Dropdown.Toggle as={Nav.Link} id="dropdown-proyectos">
+            Proyectos
+          </Dropdown.Toggle>
+          <Dropdown.Menu className='dropdown-menu'>
+            <Dropdown.Item href="#proyecto1">Muebles de Oficina</Dropdown.Item>
+            <Dropdown.Item href="#proyecto2">Muebles Hospitalarios</Dropdown.Item>
+            <Dropdown.Item href="#proyecto3">Puertas</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
             <Nav.Link href="#contacto">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>

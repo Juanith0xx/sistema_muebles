@@ -207,6 +207,24 @@ body {
   text-decoration: underline;
 }
 
+/* Proyectos */
+
+.dropdown-menu{
+  font-size: 20px !important; 
+  color: white !important;
+  border: none !important;
+  font-family: "Poppins", serif;
+  border-radius: 5px !important;
+  padding: 10px 20px !important;
+}
+
+.dropdown-menu a:hover{
+  background-color: #b75145;
+  color: white;
+  border-radius: 5px !important;
+}
+
+
 /* Media Queries */
 @media (max-width: 767px) {
   .home-m {
