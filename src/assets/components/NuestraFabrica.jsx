@@ -11,9 +11,9 @@ const NuestraFabrica = () => {
           </p> */}
           {/* <Button className='boton-p'>Saber Más</Button> */}
         </div>
-        <video
+        {/*<video
           className="video-fabrica"
-          src="/public/nuestra-fabrica.mp4" // Ruta del video
+          src="/public/nuestra-fabrica.mp4" // Ruta del video colocar el video ya que es muy pesado para git 
           width="1050"
           height="500"
           controls // Muestra controles para reproducir el video
@@ -22,7 +22,7 @@ const NuestraFabrica = () => {
           muted // Opcional: Silencia el video
         >
           Tu navegador no soporta videos HTML5.
-        </video>
+        </video>*/}
       </div>
     </div>
   );
