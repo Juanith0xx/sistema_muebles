@@ -1,0 +1,29 @@
+
+.site-footer {
+    background-color: #fff;
+    color: black;
+    padding: 14px;
+    font-size: 1vw;
+    text-align: left;
+    text-align: center; /* Centra el título */
+    margin: 2rem;
+  }
+
+  .footer-h5{
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  .footer-links a,
+  .footer-social a {
+    color: black;
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 1.9rem;
+  }
+  
+  .footer-links a:hover,
+  .footer-social a:hover {
+    text-decoration: underline;
+  }

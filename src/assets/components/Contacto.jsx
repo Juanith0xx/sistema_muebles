@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
+import "./Contacto.css" 
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -46,7 +47,7 @@ function ContactForm() {
   return (
     <>
       <div className='contact-h'>
-        <h1 className='contact-h1'>Contacto</h1>
+        <h1 className='contact-h1' >Contacto</h1>
       </div>
   
       <Form className='contact' onSubmit={handleSubmit}>

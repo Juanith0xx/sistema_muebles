@@ -1,4 +1,4 @@
-/*import Button from 'react-bootstrap/Button';*/
+import "./NuestraFabrica.css";
 
 const NuestraFabrica = () => {
   return (
@@ -6,20 +6,26 @@ const NuestraFabrica = () => {
       <h1 className='nuestraf-h1'>Nuestra Fábrica</h1>
       <div className='content-fabrica'>
         <div className='text-fabrica'>
-          <p className="p-fabrica">
-          </p>
-         { /*<Button className='boton-p'>Saber Más</Button>*/}
+          {/*<p className="p-fabrica">
+           Descripcion para el video
+          </p> */}
+          {/* <Button className='boton-p'>Saber Más</Button> */}
         </div>
-        <img
-          src="/img/nuestra fabrica.jpg"
-          alt="Nuestra Fábrica"
-          width="650"
+        <video
+          className="video-fabrica"
+          src="/public/nuestra-fabrica.mp4" // Ruta del video
+          width="1050"
           height="500"
-          className="imagen-fabrica"
-        />
+          controls // Muestra controles para reproducir el video
+          autoPlay // Opcional: Reproduce automáticamente
+          loop // Opcional: Reproduce en bucle
+          muted // Opcional: Silencia el video
+        >
+          Tu navegador no soporta videos HTML5.
+        </video>
       </div>
     </div>
   );
-}
+};
 
 export default NuestraFabrica;

@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { Row, Col } from 'react-bootstrap';
+import "./ClientesSatisfechos.css" 
 
 function ImageCarousel() {
   return (
@@ -59,6 +60,8 @@ function ImageCarousel() {
         </Row>
       </Carousel.Item>
     </Carousel>
+
+    
   );
 }
 

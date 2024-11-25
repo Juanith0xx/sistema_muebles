@@ -1,0 +1,54 @@
+.nosotros-home {
+    text-align: center; /* Centra el título */
+    margin: 2rem;
+  }
+  
+  .h1-nosotros {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+  }
+  
+  .content-nosotros {
+    display: flex; /* Flexbox para alinear horizontalmente */
+    align-items: center; /* Alineación vertical */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 2rem; /* Espacio entre la imagen y el texto */
+  }
+  
+  .imagen-nosotros {
+    max-width: 50%; /* Ajusta la imagen al 50% del ancho */
+    height: auto; /* Mantén las proporciones de la imagen */
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+  }
+  
+  .text-nosotros {
+    max-width: 50%; /* El texto ocupará hasta el 50% del contenedor */
+    text-align: left; /* Alinea el texto a la izquierda */
+  }
+  
+  .p-nosotros {
+    font-size: 1.3rem;
+    line-height: 1.6; /* Mejor legibilidad */
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", serif;
+    text-align: left;
+  }
+  
+  .boton-p {
+    background-color: #b75145; /* Cambia el color del botón */
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+    font-family: "Poppins", serif;
+  }
+  
+  .boton-p:hover {
+    background-color: #b75145; /* Color al pasar el cursor */
+  }
+  

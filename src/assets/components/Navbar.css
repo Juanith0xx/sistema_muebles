@@ -1,0 +1,24 @@
+.nav {
+    background-color: white;
+    color: #555555;
+  }
+  
+  .nav.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+  }
+  
+  .custom-nav-spacing .nav-link {
+    margin-right: 38px;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    color: #555555;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+  }
+  
+  .custom-nav-spacing .nav-link:last-child {
+    margin-right: 0;
+  }
