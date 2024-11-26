@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import MyNavbar from "./assets/components/Navbar";
+import Layout from "./assets/components/Layout";
 import Home from "./assets/components/Home";
 import Nosotros from "./assets/components/Nosotros";
 import NuestraFabrica from "./assets/components/NuestraFabrica";
@@ -9,12 +9,14 @@ import Puertas from "./assets/components/Puertas";
 import Servicios from "./assets/components/Servicios";
 import ClientesSatisfechos from "./assets/components/ClientesSatisfechos";
 import Contacto from "./assets/components/Contacto";
-import Footer from "./assets/components/Footer";
-import Layout from "./assets/components/Layout";
 
 function App() {
   return (
-    <Router>
+    <Router
+      future={{
+        v7_relativeSplatPath: true, // Activa la compatibilidad con el comportamiento de rutas de v7
+      }}
+    >
       <Routes>
         {/* Layout general con el Navbar */}
         <Route path="/" element={<Layout />}>
@@ -37,4 +39,3 @@ function App() {
 }
 
 export default App;
-

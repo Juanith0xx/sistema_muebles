@@ -1,8 +1,10 @@
+import "./Puertas.css";
 
 const Puertas = () => {
   return (
-    <div>
-      <h1>Proyectos con Puertas</h1>
+    <div id="puertas" className="puertas-h">
+      <h1>Nuestros tipos de Puertas</h1>
+      <p>Explora nuestra amplia gama de muebles para oficinas.</p>
     </div>
   )
 }

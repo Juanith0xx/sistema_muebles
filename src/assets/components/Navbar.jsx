@@ -3,7 +3,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Dropdown } from 'react-bootstrap';
 import "./Navbar.css"
-import { Outlet , Link } from "react-router-dom"
 
 
 function MyNavbar() {
@@ -30,10 +29,10 @@ function MyNavbar() {
             Proyectos
           </Dropdown.Toggle>
           <Dropdown.Menu className='dropdown-menu'>
-          <Dropdown.Item as={Link} to="/muebles-oficina">Muebles de Oficina</Dropdown.Item>
-                <Dropdown.Item as={Link} to="/muebles-hospitalarios">Muebles Hospitalarios</Dropdown.Item>
-                <Dropdown.Item as={Link} to="/puertas">Puertas</Dropdown.Item>
-                <Dropdown.Item as={Link} to="/servicios">Servicios</Dropdown.Item>
+          <Dropdown.Item href='/muebles-oficina'>Muebles de Oficina</Dropdown.Item>
+                <Dropdown.Item href='/muebles-hospitalarios'>Muebles Hospitalarios</Dropdown.Item>
+                <Dropdown.Item href='/puertas'>Puertas</Dropdown.Item>
+                <Dropdown.Item href='/servicios'>Servicios</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
           <Nav.Link href='#contacto'>Contacto</Nav.Link>

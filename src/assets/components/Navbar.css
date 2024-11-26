@@ -1,6 +1,5 @@
 .nav {
     background-color: white;
-    color: #555555;
   }
   
   .nav.fixed-top {
@@ -22,3 +21,22 @@
   .custom-nav-spacing .nav-link:last-child {
     margin-right: 0;
   }
+
+  .dropdown-menu{
+    
+    font-size: 16px !important; 
+    color: #f1f1f1 !important;
+    border: none !important;
+    font-family: "Poppins", serif !important;
+    font-weight: bold !important;
+    border-radius: 25px !important;
+    padding: 10px 20px !important;
+
+  }
+
+  .dropdown-menu a:hover{
+    background-color: #b75145;
+    color: white;
+    border-radius: 5px !important;
+  }
+  

@@ -90,13 +90,13 @@ function ContactForm() {
             as="textarea"
             rows={3}
             name="message"
-            placeholder="Escribe tu mensaje"
+            placeholder="Escribe tu mensaje *"
             value={formData.message}
             onChange={handleChange}
           />
         </Form.Group>
         <div className='b-contact'>
-          <Button type="submit" className='boton-p'>
+          <Button type="submit" className='boton-p-f'>
             Enviar
           </Button>
         </div>

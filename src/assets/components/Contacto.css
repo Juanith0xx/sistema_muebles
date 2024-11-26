@@ -10,6 +10,7 @@ form {
     margin: 2rem auto;
     width: 100%; /* Ocupa todo el espacio disponible */
     max-width: 800px; /* Define un ancho máximo */
+
 }
 
 /* Estilización adicional para las entradas */
@@ -28,8 +29,19 @@ input, textarea {
     font-weight: bold;
 }
 
-.boton-p{
+.boton-p-f{
     margin-top: 2%;
+    background-color: #b75145 !important; 
+    border: none !important;
+    padding: 0.8rem 1.2rem !important;
+    font-size: 1rem !important;
+    border-radius: 5px !important;
+    color: white !important;
+    transition: background-color 0.3s ease !important;
+    font-family: "Poppins", serif !important;
 }
 
+.contact{
+    font-family: "Poppins", sans-serif;
+}
 
