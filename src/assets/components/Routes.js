@@ -1,20 +1,26 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import CustomCard from './CustomCard';  // Asegúrate de importar tu CustomCard
-import ClinicaBioBio from './ClinicaBioBio';  // Asegúrate de importar el nuevo componente
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        {/* Definir la ruta para el componente ClinicaBioBio */}
-        <Route path="/proyecto/clinica-bio-bio" element={<ClinicaBioBio />} />
-             
-        {/* Otras rutas, por ejemplo, la de tu componente de inicio o listado */}
-        <Route path="/" element={<div>Inicio</div>} />
-      </Routes>
-    </Router>
-  );
+function ScrollToTop() {
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        const offset = 80; // Altura del navbar
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: elementPosition - offset,
+          behavior: "smooth",
+        });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [pathname, hash]);
+
+  return null;
 }
 
-export default App;
+export default ScrollToTop;

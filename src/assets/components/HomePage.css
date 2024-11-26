@@ -1,0 +1,44 @@
+
+/* Asegúrate de que el body y los contenedores parent ocupen todo el ancho */
+
+
+.content-home {
+  background-image: url(/img/forus.jpg); /* Imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  width: 100vw; /* Ancho completo de la ventana */
+  padding-bottom: 4rem; 
+  padding-top: 5%;
+  
+}
+
+
+.home-m {
+  text-align: center; /* Centra el título */
+  margin: 2rem auto; /* Centra el margen horizontalmente */
+}
+
+.h1-home {
+  font-size: 2.9rem;
+  margin-bottom: 1.5rem;
+  text-align: left; /* Alineación del texto */
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  color: white;
+}
+
+.boton-p {
+  background-color: #b75145; /* Cambia el color del botón */
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", serif;
+  margin-top: -10px; /* Ajusta este valor según lo que necesites */
+}
+
+.boton-p:hover {
+  background-color: #a44238; /* Cambia ligeramente el color en hover */
+}

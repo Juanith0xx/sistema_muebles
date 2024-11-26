@@ -1,18 +1,39 @@
-import Button from "react-bootstrap/esm/Button"
-import "./Home.css"
-import { Container } from "react-bootstrap"
+import Nosotros from "./Nosotros";
+import ClientesSatisfechos from "./ClientesSatisfechos";
+import NuestraFabrica from "./NuestraFabrica";
+import Contacto from "./Contacto";
+import HomePage from "./HomePage";
 
 const Home = () => {
   return (
-    <Container className="content-home">
-    <div className="home-m">
-      <h1 className="h1-home">Una <br></br>Solución<br></br>Integral</h1>
-        <a href="mailto:contacto@sistemamuebles.cl">
-            <Button className="boton-p">Mas información</Button>
-          </a> 
-    </div>
-    </Container>
-  )
-}
+    <div>
+      {/* Sección de Nosotros */}
+      <section id="home-page">
+        <HomePage />
+      </section>
+      
+      {/* Sección de Nosotros */}
+      <section id="nosotros">
+        <Nosotros />
+      </section>
 
-export default Home
+      {/* Sección de Nuestros Clientes */}
+      <section id="clientes-satisfechos">
+        <h1 className="h-clientessatisfechos">Nuestros clientes</h1>
+        <ClientesSatisfechos />
+      </section>
+
+      {/* Sección de Nuestra Fábrica */}
+      <section id="fabrica">
+        <NuestraFabrica />
+      </section>
+
+      {/* Sección de Contacto */}
+      <section id="contacto">
+        <Contacto />
+      </section>
+    </div>
+  );
+};
+
+export default Home;

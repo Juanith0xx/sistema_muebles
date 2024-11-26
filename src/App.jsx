@@ -1,58 +1,40 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
-import MyNavbar from './assets/components/Navbar';
-import Nosotros from './assets/components/Nosotros';
-import Container from 'react-bootstrap/Container';
-import NuestraFabrica from './assets/components/NuestraFabrica';
-import ClientesSatisfechos from './assets/components/ClientesSatisfechos';
-import Contacto from './assets/components/Contacto';
-import Home from './assets/components/Home';
-import Footer from './assets/components/Footer';
-import ProjectDetails from './assets/components/ProjectDetails';
-import Map from './assets/components/Map';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MyNavbar from "./assets/components/Navbar";
+import Home from "./assets/components/Home";
+import Nosotros from "./assets/components/Nosotros";
+import NuestraFabrica from "./assets/components/NuestraFabrica";
+import MueblesOficina from "./assets/components/MueblesOficina";
+import MueblesHospitalarios from "./assets/components/MueblesHospitalarios";
+import Puertas from "./assets/components/Puertas";
+import Servicios from "./assets/components/Servicios";
+import ClientesSatisfechos from "./assets/components/ClientesSatisfechos";
+import Contacto from "./assets/components/Contacto";
+import Footer from "./assets/components/Footer";
+import Layout from "./assets/components/Layout";
 
 function App() {
-  
   return (
     <Router>
-      <MyNavbar />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Container id="home">
-                <Home />
-              </Container>
+        {/* Layout general con el Navbar */}
+        <Route path="/" element={<Layout />}>
+          {/* Rutas principales */}
+          <Route index element={<Home />} />
+          <Route path="nosotros" element={<Nosotros />} />
+          <Route path="fabrica" element={<NuestraFabrica />} />
+          <Route path="clientes-satisfechos" element={<ClientesSatisfechos />} />
+          <Route path="contacto" element={<Contacto />} />
 
-              <Container id="nosotros">
-                <Nosotros />
-              </Container>
-
-              <Container id="fabrica">
-                <NuestraFabrica />
-              </Container>
-
-              <Container className='content-clientes'>
-                <h1 className='h-clientessatisfechos'>Nuestros Clientes</h1>
-                <ClientesSatisfechos />
-              </Container>
-
-              <Container id="contacto">
-                <Contacto />
-              </Container>
-              
-              <Container>
-                <Footer />
-              </Container>
-            </>
-          }
-        />
-
-        <Route path="/proyecto/:projectId" element={<ProjectDetails />} />
+          {/* Rutas específicas */}
+          <Route path="muebles-oficina" element={<MueblesOficina />} />
+          <Route path="muebles-hospitalarios" element={<MueblesHospitalarios />} />
+          <Route path="puertas" element={<Puertas />} />
+          <Route path="servicios" element={<Servicios />} />
+        </Route>
       </Routes>
     </Router>
   );
 }
 
 export default App;
+

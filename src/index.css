@@ -1,9 +1,8 @@
-/* Estilo general */
-body {
-  background-color: black;
-  font-family: "Poppins", serif;
+body, html {
   margin: 0;
-  padding-top: 56px;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Evita scroll horizontal si hay desbordamiento */
 }
 
 .container {
@@ -17,6 +16,7 @@ body {
   text-align: left;
   font-family: "Poppins", serif;
   font-weight: bold;
+  padding-left: 10%;
 }
 
 .content-clientes{

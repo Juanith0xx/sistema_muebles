@@ -10,6 +10,7 @@
   }
 
   .footer-h5{
+    padding-top: 7%;
     font-family: "Poppins", serif;
     font-weight: bold;
     font-size: 1.3rem;
@@ -21,9 +22,15 @@
     margin: 0 8px;
     text-decoration: none;
     font-size: 1.9rem;
+    
   }
   
   .footer-links a:hover,
   .footer-social a:hover {
     text-decoration: underline;
+  }
+
+  .footer-p,
+  .footer-copyright{
+    font-family: "Poppins", serif;
   }

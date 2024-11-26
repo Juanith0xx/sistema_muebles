@@ -9,6 +9,7 @@
     text-align: left;
     font-family: "Poppins", serif;
     font-weight: bold;
+    padding-left: 10%;
   }
   
   .content-nosotros {
@@ -21,7 +22,9 @@
   .imagen-nosotros {
     max-width: 50%; /* Ajusta la imagen al 50% del ancho */
     height: auto; /* Mantén las proporciones de la imagen */
+    padding-left: 10%;
     border-radius: 10px; /* Bordes redondeados (opcional) */
+    
   }
   
   .text-nosotros {

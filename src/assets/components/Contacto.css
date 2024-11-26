@@ -1,16 +1,35 @@
-.contact-h{
-    text-align: center; /* Centra el título */
-    margin: 2rem;
+/* Margen general para el contenedor principal */
+.container {
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 15px; /* Espaciado interno para evitar que toque los bordes */
+    max-width: 1200px; /* Establece un ancho máximo para evitar que se expanda mucho */
+}
+
+/* Ajustes para el formulario */
+form {
+    margin: 2rem auto;
+    width: 100%; /* Ocupa todo el espacio disponible */
+    max-width: 800px; /* Define un ancho máximo */
+}
+
+/* Estilización adicional para las entradas */
+input, textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
 }
 
 .contact-h1{
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    font-family: "Poppins", serif;
+    padding-left: 10%;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
 
-.b-contact{
-    padding-top: 20px;
+.boton-p{
+    margin-top: 2%;
 }
+
+
