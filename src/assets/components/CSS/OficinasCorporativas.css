@@ -2,4 +2,61 @@
 .muebles-home{
     padding-top: 5%;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .galeria-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .galeria-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria-item:hover .galeria-img {
+    transform: scale(1.1); /* Zoom de la imagen */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cortina semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .galeria-item:hover .overlay {
+    opacity: 1;
+    transform: translateY(0); /* Desliza la cortina */
+  }
+  
+  .zoom-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .zoom-icon:hover {
+    color: #ffcc00; /* Cambia el color al pasar por el ícono */
+  }
+  
