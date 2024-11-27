@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Dropdown } from 'react-bootstrap';
-import "./Navbar.css"
+import "./CSS/Navbar.css"
 
 
 function MyNavbar() {
@@ -29,8 +29,8 @@ function MyNavbar() {
             Proyectos
           </Dropdown.Toggle>
           <Dropdown.Menu className='dropdown-menu'>
-          <Dropdown.Item href='/muebles-oficina'>Muebles de Oficina</Dropdown.Item>
-                <Dropdown.Item href='/muebles-hospitalarios'>Muebles Hospitalarios</Dropdown.Item>
+          <Dropdown.Item href='/Oficinas-Corporativas'>Oficinas Corporativas</Dropdown.Item>
+                <Dropdown.Item href='/Muebles-Clinicos-Hospitalarios'>Muebles Clinicos - Hospitalarios</Dropdown.Item>
                 <Dropdown.Item href='/puertas'>Puertas</Dropdown.Item>
                 <Dropdown.Item href='/servicios'>Servicios</Dropdown.Item>
           </Dropdown.Menu>

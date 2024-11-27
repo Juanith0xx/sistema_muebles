@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/esm/Button";
-import "./Nosotros.css"; // Asegúrate de importar el CSS si aún no lo tienes
+import "./CSS/Nosotros.css"; // Asegúrate de importar el CSS si aún no lo tienes
 
 const Nosotros = () => {
   return (

@@ -3,8 +3,8 @@ import Layout from "./assets/components/Layout";
 import Home from "./assets/components/Home";
 import Nosotros from "./assets/components/Nosotros";
 import NuestraFabrica from "./assets/components/NuestraFabrica";
-import MueblesOficina from "./assets/components/MueblesOficina";
-import MueblesHospitalarios from "./assets/components/MueblesHospitalarios";
+import OficinasCorporativas from "./assets/components/OficinasCorporativas";
+import MueblesHospitalarios from "./assets/components/MueblesClinicos-Hospitalarios";
 import Puertas from "./assets/components/Puertas";
 import Servicios from "./assets/components/Servicios";
 import ClientesSatisfechos from "./assets/components/ClientesSatisfechos";
@@ -28,8 +28,8 @@ function App() {
           <Route path="contacto" element={<Contacto />} />
 
           {/* Rutas específicas */}
-          <Route path="muebles-oficina" element={<MueblesOficina />} />
-          <Route path="muebles-hospitalarios" element={<MueblesHospitalarios />} />
+          <Route path="Oficinas-Corporativas" element={<OficinasCorporativas />} />
+          <Route path="Muebles-Clinicos-Hospitalarios" element={<MueblesHospitalarios />} />
           <Route path="puertas" element={<Puertas />} />
           <Route path="servicios" element={<Servicios />} />
         </Route>

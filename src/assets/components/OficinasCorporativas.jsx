@@ -1,9 +1,9 @@
-import "./MueblesOficina.css";
+import "./CSS/OficinasCorporativas.css";
 
 const MueblesOficina = () => {
   return (
-    <div id="Muebles-Oficina" className="muebles-home">
-      <h1>Muebles de Oficina</h1>
+    <div id="Oficinas-Corporativa" className="muebles-home">
+      <h1>Muebles de Oficinas Corporativas</h1>
       <p>Explora nuestra amplia gama de muebles para oficinas.</p>
     </div>
   );

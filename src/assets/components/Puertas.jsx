@@ -1,4 +1,4 @@
-import "./Puertas.css";
+import "./CSS/Puertas.css";
 
 const Puertas = () => {
   return (

@@ -1,4 +1,4 @@
-import "./NuestraFabrica.css";
+import "./CSS/NuestraFabrica.css";
 
 const NuestraFabrica = () => {
   return (
@@ -13,7 +13,7 @@ const NuestraFabrica = () => {
         </div>
         <video
           className="video-fabrica"
-          src="/public/nuestra-fabrica.mp4" // Ruta del video colocar el video ya que es muy pesado para git 
+          src="/nuestra-fabrica.mp4" // Ruta del video colocar el video ya que es muy pesado para git 
           width="1050"
           height="500"
           controls // Muestra controles para reproducir el video

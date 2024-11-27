@@ -1,5 +1,5 @@
 import Button from "react-bootstrap/esm/Button"
-import "./HomePage.css"
+import "./CSS/HomePage.css"
 import { Container } from "react-bootstrap"
 
 const HomePage = () => {
