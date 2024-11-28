@@ -7,10 +7,7 @@ const MueblesOficina = () => {
     { src: "/img/IMG_1382.JPG", alt: "Mueble 2" },
     { src: "/img/IMG-20230502-WA0004.jpg", alt: "Mueble 3" },
     { src: "/img/IMG-20230502-WA0003.jpg", alt: "Mueble 4" },
-    { src: "/img/IMG_1382.JPG", alt: "Mueble 4" },
-    { src: "/img/IMG_1395.JPG", alt: "Mueble 4" },
-    { src: "/img/IMG_1398.JPG", alt: "Mueble 4" },
-    { src: "/img/IMG_1398.JPG", alt: "Mueble 4" },
+
   ];
 
   const handleImageClick = (src) => {
@@ -19,8 +16,10 @@ const MueblesOficina = () => {
 
   return (
     <div id="Oficinas-Corporativa" className="muebles-home">
-      <h1>Muebles de Oficinas Corporativas</h1>
-      <p>Explora nuestra amplia gama de muebles para oficinas.</p>
+      <h1>Oficinas Corporativas</h1>
+      <h3>Titulo del proyecto</h3>
+      <p>pequena descripcion</p>
+
       <div className="galeria">
         {images.map((image, index) => (
           <div className="galeria-item" key={index}>
