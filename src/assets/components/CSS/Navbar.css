@@ -22,21 +22,23 @@
     margin-right: 0;
   }
 
-  .dropdown-menu{
-    
-    font-size: 16px !important; 
-    color: #f1f1f1 !important;
-    border: none !important;
-    font-family: "Poppins", serif !important;
-    font-weight: bold !important;
-    border-radius: 25px !important;
-    padding: 10px 20px !important;
-
+  .dropdown-menu a {
+    font-family: "Poppins", serif;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black; /* Color inicial del texto */
+    text-decoration: none;
+    background: linear-gradient(to right, transparent 50%, #b75145 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: background-position 0.7s ease-out, color 0.5s ease-out;
   }
-
-  .dropdown-menu a:hover{
-    background-color: #b75145;
-    color: white;
+  
+  .dropdown-menu a:hover {
+    background-position: right bottom; /* Mueve el color desde derecha a izquierda */
+    color: white; /* Cambia el color del texto */
     border-radius: 5px !important;
   }
+  
   
