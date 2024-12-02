@@ -1,45 +1,69 @@
-
-/* Asegúrate de que el body y los contenedores parent ocupen todo el ancho */
-
-
+/* Contenedor principal con imagen de fondo */
 .content-home {
   background-image: url(/img/forus.jpg); /* Imagen de fondo */
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-size: cover; /* Imagen cubre todo el contenedor */
   background-position: center; /* Centra la imagen */
   width: 100vw; /* Ancho completo de la ventana */
-  padding-bottom: 4rem; 
+  padding-bottom: 4rem;
   padding-top: 5%;
   border-radius: 10px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el contenido a la izquierda */
+  justify-content: center; /* Centra verticalmente si hay más contenido */
+  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+  padding-left: 5%; /* Agrega espacio desde el borde izquierdo */
 }
 
-
-.home-m {
-  text-align: center; /* Centra el título */
-  margin: 2rem auto; /* Centra el margen horizontalmente */
-}
-
+/* Título principal */
 .h1-home {
-  font-size: 2.9rem;
+  font-size: 2.5rem; /* Tamaño grande por defecto */
   margin-bottom: 1.5rem;
-  text-align: left; /* Alineación del texto */
   font-family: "Poppins", serif;
   font-weight: bold;
   color: white;
+  text-align: left; /* Alineación a la izquierda */
 }
 
+/* Contenedor de título principal */
+.home-m {
+  margin: 2rem 0;
+}
+
+/* Botón */
 .boton-p {
-  background-color: #b75145; /* Cambia el color del botón */
-  border: none;
-  padding: 0.8rem 1.2rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  color: white;
-  transition: background-color 0.3s ease;
-  font-family: "Poppins", serif;
-  margin-top: -10px; /* Ajusta este valor según lo que necesites */
+  margin-top: 2%;
+    background-color: #b75145 !important;
+    border: none !important;
+    padding: 0.8rem 1.2rem !important;
+    font-size: 1rem !important;
+    border-radius: 5px !important;
+    color: white !important;
+    transition: background-color 0.3s ease !important;
+    font-family: "Poppins", serif !important;
 }
 
+/* Hover del botón */
 .boton-p:hover {
-  background-color: #a44238; /* Cambia ligeramente el color en hover */
+  background-color: #a44238;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .h1-home {
+    font-size: 2rem; /* Reduce el tamaño del título en móviles */
+    margin-bottom: 1rem;
+  }
+
+  .content-home {
+    padding: 2rem 1rem;
+    border-radius: 0;
+    align-items: center; /* Centra horizontalmente en móviles */
+  }
+
+  .boton-p {
+    width: 100%; /* Botón ocupa todo el ancho disponible */
+    padding: 1rem;
+    max-width: none; /* Permite que ocupe el ancho completo */
+  }
 }

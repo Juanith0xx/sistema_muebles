@@ -19,7 +19,7 @@ const Home = () => {
 
       {/* Sección de Nuestros Clientes */}
       <section id="clientes-satisfechos">
-        <h1 className="h-clientessatisfechos">Nuestros clientes</h1>
+        <h1 className="h-clientessatisfechos">Nuestros Clientes</h1>
         <ClientesSatisfechos />
       </section>
 

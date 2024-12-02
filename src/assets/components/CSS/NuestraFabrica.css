@@ -1,34 +1,82 @@
-.fabrica-home{
+.fabrica-home {
     text-align: center; /* Centra el título */
     margin: 2rem;
-}
-.p-fabrica{
+  }
+  
+  .p-fabrica {
     font-size: 1.3rem;
     line-height: 1.6; /* Mejor legibilidad */
     margin-bottom: 1.5rem;
     font-family: "Poppins", serif;
     text-align: left;
-}
-
-.nuestraf-h1{
-    padding-left: 9%;
+  }
+  
+  .nuestraf-h1 {
+    padding-left: 8%;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     text-align: left;
     font-family: "Poppins", serif;
     font-weight: bold;
-}
-
-.content-fabrica{
+  }
+  
+  .content-fabrica {
     display: flex; /* Flexbox para alinear horizontalmente */
     align-items: center; /* Alineación vertical */
     justify-content: center; /* Centra el contenido horizontalmente */
     gap: 2rem; /* Espacio entre la imagen y el texto */
-}
-
-.imagen-fabrica{
+  }
+  
+  /* Ajuste de imagen */
+  .imagen-fabrica {
     max-width: 50%; /* Ajusta la imagen al 50% del ancho */
     height: auto; /* Mantén las proporciones de la imagen */
-    border-radius: 10px; /* Bordes redondeados (opcional) */
-}
-
+    border-radius: 10px; /* Bordes redondeados */
+  }
+  
+  /* Media Queries para dispositivos más pequeños */
+  @media (max-width: 768px) {
+    .nuestraf-h1 {
+      font-size: 2.5rem; /* Reducir el tamaño del título */
+      padding-left: 5%; /* Ajustar el padding para pantallas más pequeñas */
+      text-align: center; /* Centrar el título */
+    }
+  
+    .content-fabrica {
+      flex-direction: column; /* Apilar imagen y texto en pantallas pequeñas */
+      gap: 1rem; /* Reduce el espacio entre los elementos */
+    }
+  
+    .imagen-fabrica {
+      max-width: 80%; /* La imagen ocupa un 80% del contenedor */
+      padding-left: 0; /* Elimina padding */
+    }
+  
+    .p-fabrica {
+      font-size: 1.1rem; /* Ajuste del tamaño de fuente */
+      text-align: center; /* Centrar el texto */
+    }
+  }
+  
+  /* Ajuste para pantallas aún más pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .nuestraf-h1 {
+      font-size: 1.7rem; /* Más pequeño en móviles */
+      text-align: center; /* Centrado del título */
+      padding-left: 0; /* Elimina el padding en móviles */
+    }
+  
+    .content-fabrica {
+      gap: 1rem; /* Reduce el espacio */
+    }
+  
+    .imagen-fabrica {
+      max-width: 90%; /* La imagen ocupa casi todo el ancho */
+    }
+  
+    .p-fabrica {
+      font-size: 1rem; /* Ajuste de fuente más pequeña */
+      text-align: center; /* Centrar el texto */
+    }
+  }
+  

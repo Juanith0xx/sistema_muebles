@@ -10,7 +10,6 @@ form {
     margin: 2rem auto;
     width: 100%; /* Ocupa todo el espacio disponible */
     max-width: 800px; /* Define un ancho máximo */
-
 }
 
 /* Estilización adicional para las entradas */
@@ -23,15 +22,17 @@ input, textarea {
     font-family: "Poppins", sans-serif;
 }
 
-.contact-h1{
+/* Título principal */
+.contact-h1 {
     padding-left: 10%;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
 
-.boton-p-f{
+/* Estilos para el botón */
+.boton-p-f {
     margin-top: 2%;
-    background-color: #b75145 !important; 
+    background-color: #b75145 !important;
     border: none !important;
     padding: 0.8rem 1.2rem !important;
     font-size: 1rem !important;
@@ -41,7 +42,54 @@ input, textarea {
     font-family: "Poppins", serif !important;
 }
 
-.contact{
+/* Estilo general para el contenido */
+.contact {
     font-family: "Poppins", sans-serif;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .contact-h1 {
+        font-size: 1.8rem; /* Reduce el tamaño del título */
+        padding-left: 0; /* Elimina el padding en pantallas pequeñas */
+        text-align: center; /* Centra el título */
+    }
+
+    form {
+        max-width: 100%; /* El formulario ocupa todo el ancho disponible */
+    }
+
+    .boton-p-f {
+        width: 100%; /* El botón ocupa todo el ancho */
+        padding: 1rem 1.5rem; /* Aumenta el tamaño del botón */
+        font-size: 1.1rem; /* Aumenta el tamaño del texto en el botón */
+    }
+
+    input, textarea {
+        padding: 12px; /* Aumenta el padding de las entradas para facilitar la interacción */
+    }
+}
+
+/* Media Queries para pantallas aún más pequeñas (móviles) */
+@media (max-width: 480px) {
+    .contact-h1 {
+        font-size: 1.5rem; /* Reduce aún más el tamaño del título */
+        padding-left: 0; /* Elimina el padding */
+        text-align: center; /* Centra el título */
+    }
+
+    .boton-p-f {
+        padding: 1rem 1.5rem; /* Aumenta el padding del botón */
+        font-size: 1rem; /* Aumenta el tamaño de fuente */
+    }
+
+    input, textarea {
+        font-size: 1rem; /* Ajusta el tamaño de la fuente */
+    }
+}

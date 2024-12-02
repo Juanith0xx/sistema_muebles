@@ -1,36 +1,90 @@
-
+/* Estilo general del pie de página */
 .site-footer {
-    background-color: #fff;
-    color: black;
-    padding: 14px;
-    font-size: 1vw;
-    text-align: left;
-    text-align: center; /* Centra el título */
-    margin: 2rem;
+  background-color: #fff;
+  color: black;
+  padding: 14px;
+  font-size: 1vw;
+  text-align: center;
+  margin: 2rem;
+}
+
+/* Título dentro del pie de página */
+.footer-h5 {
+  padding-top: 7%;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Enlaces dentro del pie de página */
+.footer-links a,
+.footer-social a {
+  color: black;
+  margin: 0 8px;
+  text-decoration: none;
+  font-size: 1.9rem;
+}
+
+/* Efecto hover en los enlaces */
+.footer-links a:hover,
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos de texto en el pie de página */
+.footer-p,
+.footer-copyright {
+  font-family: "Poppins", serif;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  /* Ajuste del pie de página */
+  .site-footer {
+      font-size: 3vw; /* Aumenta el tamaño de la fuente en pantallas pequeñas */
+      padding: 10px; /* Reduce el padding en pantallas pequeñas */
+      margin: 1rem; /* Reduce el margen */
   }
 
-  .footer-h5{
-    padding-top: 7%;
-    font-family: "Poppins", serif;
-    font-weight: bold;
-    font-size: 1.3rem;
+  .footer-h5 {
+      font-size: 1.1rem; /* Ajusta el tamaño del título */
+      padding-top: 5%; /* Ajusta el padding superior */
   }
-  
+
+  /* Ajuste de los enlaces */
   .footer-links a,
   .footer-social a {
-    color: black;
-    margin: 0 8px;
-    text-decoration: none;
-    font-size: 1.9rem;
-    
-  }
-  
-  .footer-links a:hover,
-  .footer-social a:hover {
-    text-decoration: underline;
+      font-size: 1.5rem; /* Reduce el tamaño de los enlaces */
   }
 
   .footer-p,
-  .footer-copyright{
-    font-family: "Poppins", serif;
+  .footer-copyright {
+      font-size: 0.9rem; /* Ajusta el tamaño de fuente de párrafos */
   }
+}
+
+/* Media Queries para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+  /* Ajuste del pie de página */
+  .site-footer {
+      font-size: 4vw; /* Aumenta más el tamaño de la fuente en móviles */
+      padding: 8px; /* Reduce aún más el padding */
+  }
+
+  .footer-h5 {
+      font-size: 1rem; /* Ajusta el tamaño del título */
+      padding-top: 4%; /* Reduce el padding superior */
+  }
+
+  /* Ajuste de los enlaces */
+  .footer-links a,
+  .footer-social a {
+      font-size: 1.2rem; /* Ajusta el tamaño de los enlaces */
+      margin: 0 5px; /* Reduce el espacio entre los enlaces */
+  }
+
+  .footer-p,
+  .footer-copyright {
+      font-size: 0.8rem; /* Ajusta el tamaño de los párrafos */
+  }
+}

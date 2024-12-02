@@ -1,15 +1,49 @@
-
-.servicios-h{
-    padding-top: 5%;
+.servicios-h { 
+    padding-top: 7%;
     text-align: center;
     font-family: "Poppins", serif;
-
 }
 
-.servicios-ul{
-    padding-top: 2%;
+.servicios-ul {
+    padding-top: 3%;
     font-size: 25px;
     font-family: "Poppins", serif;
     font-weight: bold;
+    text-align: left;
+    padding-top: 10px;
 }
 
+.servicios-ul div {
+    padding: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover para cambiar el fondo */
+.servicios-ul div:hover {
+    background-color: #b75145; /* Color de fondo al hacer hover */
+    color: white; /* Cambiar el color del texto */
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .servicios-h {
+        padding-top: 4%;
+    }
+
+    .servicios-ul {
+        font-size: 20px; /* Reducir el tamaño de fuente en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .servicios-h {
+        padding-top: 3%; /* Reducir el padding superior en pantallas muy pequeñas */
+    }
+
+    .servicios-ul {
+        font-size: 18px; /* Ajustar más el tamaño de fuente en pantallas muy pequeñas */
+    }
+}

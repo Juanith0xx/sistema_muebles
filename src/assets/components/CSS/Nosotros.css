@@ -1,57 +1,88 @@
+
 .nosotros-home {
-    text-align: center; /* Centra el título */
-    margin: 2rem;
-  }
-  
+  text-align: center;
+  margin: 2rem;
+}
+
+.h1-nosotros {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  padding-left: 8%;
+}
+
+.content-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribuye imagen y texto */
+  gap: 2rem;
+  flex-wrap: nowrap; /* Evita que se apilen en pantallas grandes */
+}
+
+.imagen-nosotros {
+  max-width: 45%; /* Imagen ocupa menos del 50% */
+  height: auto;
+  border-radius: 10px;
+  margin-left: 5%;
+}
+
+.text-nosotros {
+  max-width: 45%; /* Texto ocupa menos del 50% */
+  text-align: left;
+}
+
+.p-nosotros {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", serif;
+  text-align: left;
+}
+
+.boton-p {
+  background-color: #b75145;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s ease;
+  font-family: "Poppins", serif;
+  max-width: 300px;
+  width: 100%;
+}
+
+.boton-p:hover {
+  background-color: #a03e38;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
   .h1-nosotros {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    font-family: "Poppins", serif;
-    font-weight: bold;
-    padding-left: 10%;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 0;
   }
-  
+
   .content-nosotros {
-    display: flex; /* Flexbox para alinear horizontalmente */
-    align-items: center; /* Alineación vertical */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    gap: 2rem; /* Espacio entre la imagen y el texto */
+    flex-direction: column; /* Apila imagen y texto verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 1rem;
   }
-  
-  .imagen-nosotros {
-    max-width: 50%; /* Ajusta la imagen al 50% del ancho */
-    height: auto; /* Mantén las proporciones de la imagen */
-    padding-left: 10%;
-    border-radius: 10px; /* Bordes redondeados (opcional) */
-    
+
+  .imagen-nosotros, .text-nosotros {
+    max-width: 90%; /* Reduce el ancho máximo al 90% */
+    padding-left: 0;
   }
-  
-  .text-nosotros {
-    max-width: 50%; /* El texto ocupará hasta el 50% del contenedor */
-    text-align: left; /* Alinea el texto a la izquierda */
-  }
-  
+
   .p-nosotros {
-    font-size: 1.3rem;
-    line-height: 1.6; /* Mejor legibilidad */
-    margin-bottom: 1.5rem;
-    font-family: "Poppins", serif;
-    text-align: left;
-  }
-  
-  .boton-p {
-    background-color: #b75145; /* Cambia el color del botón */
-    border: none;
-    padding: 0.8rem 1.2rem;
     font-size: 1rem;
-    border-radius: 5px;
-    color: white;
-    transition: background-color 0.3s ease;
-    font-family: "Poppins", serif;
+    text-align: center; /* Centra el texto */
   }
-  
-  .boton-p:hover {
-    background-color: #b75145; /* Color al pasar el cursor */
+
+  .boton-p {
+    margin: 0 auto; /* Centra el botón */
   }
-  
+}
