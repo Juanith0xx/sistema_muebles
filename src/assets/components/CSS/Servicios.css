@@ -2,13 +2,13 @@
     padding-top: 7%;
     text-align: center;
     font-family: "Poppins", serif;
+    font-weight: bold;
 }
 
 .servicios-ul {
     padding-top: 3%;
     font-size: 25px;
     font-family: "Poppins", serif;
-    font-weight: bold;
     text-align: left;
     padding-top: 10px;
 }
