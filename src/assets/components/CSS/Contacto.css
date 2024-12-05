@@ -22,11 +22,13 @@ input, textarea {
     font-family: "Poppins", sans-serif;
 }
 
+
 /* Título principal */
 .contact-h1 {
     padding-left: 10%;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
+    color: #555555;
 }
 
 /* Estilos para el botón */

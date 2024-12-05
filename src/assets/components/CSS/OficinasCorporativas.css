@@ -1,62 +1,84 @@
-
-.muebles-home{
-    padding-top: 5%;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
+.muebles-home {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  margin-top: 8%;
+  color: #555555;
 }
 
+/* Galería con diseño de cuadrícula flexible */
 .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Se ajusta según el tamaño disponible */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galeria-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.galeria-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; /* Mantiene una proporción adaptable */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galeria-item:hover .galeria-img {
+  transform: scale(1.1); /* Zoom en la imagen al pasar el mouse */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.galeria-item:hover .overlay {
+  opacity: 1; /* Aparece la cortina al hacer hover */
+}
+
+.zoom-icon {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.zoom-icon:hover {
+  color: #ffcc00; /* Cambio de color al pasar el mouse */
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas más pequeñas */
   }
-  
-  .galeria-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-  }
-  
+
   .galeria-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    height: 150px;
   }
-  
-  .galeria-item:hover .galeria-img {
-    transform: scale(1.1); /* Zoom de la imagen */
+}
+
+@media (max-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas muy pequeñas */
   }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Cortina semi-transparente */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
+
+  .galeria-img {
+    height: 120px;
   }
-  
-  .galeria-item:hover .overlay {
-    opacity: 1;
-    transform: translateY(0); /* Desliza la cortina */
-  }
-  
-  .zoom-icon {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .zoom-icon:hover {
-    color: #ffcc00; /* Cambia el color al pasar por el ícono */
-  }
-  
+}

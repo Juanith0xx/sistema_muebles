@@ -1,6 +1,7 @@
 /* Navbar */
 .nav {
   background-color: white;
+  
 }
 
 .nav.fixed-top {
@@ -13,10 +14,10 @@
 .custom-nav-spacing .nav-link {
   margin-right: 38px;
   margin-left: 30px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #555555;
   font-family: "Poppins", serif;
-  font-weight: bold;
+  
 }
 
 .custom-nav-spacing .nav-link:last-child {
@@ -25,7 +26,6 @@
 
 .dropdown-menu a {
   font-family: "Poppins", serif;
-  font-weight: bold;
   position: relative;
   display: inline-block;
   padding: 12px 22px;

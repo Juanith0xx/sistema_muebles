@@ -8,7 +8,7 @@ function ScrollToTop() {
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
-        const offset = 80; // Altura del navbar
+        const offset = -80; // Altura del navbar
         const elementPosition = element.getBoundingClientRect().top + window.scrollY;
         window.scrollTo({
           top: elementPosition - offset,

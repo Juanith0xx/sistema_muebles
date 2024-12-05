@@ -1,49 +1,73 @@
-.servicios-h { 
-    padding-top: 7%;
-    text-align: center;
-    font-family: "Poppins", serif;
+/* Estilo para el título principal de servicios */
+.servicios-titulo {
+    font-size: 2rem;
     font-weight: bold;
-}
-
-.servicios-ul {
-    padding-top: 3%;
-    font-size: 25px;
-    font-family: "Poppins", serif;
-    text-align: left;
-    padding-top: 10px;
-}
-
-.servicios-ul div {
-    padding: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Efecto hover para cambiar el fondo */
-.servicios-ul div:hover {
-    background-color: #b75145; /* Color de fondo al hacer hover */
-    color: white; /* Cambiar el color del texto */
-    cursor: pointer;
+    color: #333; /* Asegura que el color sea visible */
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Estilo para la cuadrícula */
+  .servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  /* Estilo de cada servicio */
+  .servicio-item {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Estilo para el título de cada servicio */
+  .servicio-titulo {
+    font-size: 1.5rem;
+    color: #000; /* Color negro para garantizar visibilidad */
+    margin-top: 1rem; /* Espacio entre la imagen y el título */
+  }
+  
+  /* Estilo para las imágenes */
+  .servicio-imagen {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
+  }
+  
+  /* Estilo para los párrafos de descripción */
+  .servicio-item p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+
+  @keyframes subirBajar {
+    0%, 100% {
+      transform: translateY(0); /* Posición inicial */
+    }
+    50% {
+      transform: translateY(-10px); /* Subir */
+    }
+  }
+  
+  .hover-subir-bajar {
+    animation: subirBajar 1.5s infinite ease-in-out; /* Duración de 1.5 segundos */
+  }
+  
+
+  @keyframes subirBajar {
+  0%, 100% {
+    transform: translateY(0); /* Posición inicial */
+  }
+  50% {
+    transform: translateY(-10px); /* Subir */
+  }
 }
 
-
-/* Media Queries para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .servicios-h {
-        padding-top: 4%;
-    }
-
-    .servicios-ul {
-        font-size: 20px; /* Reducir el tamaño de fuente en pantallas más pequeñas */
-    }
-}
-
-@media (max-width: 576px) {
-    .servicios-h {
-        padding-top: 3%; /* Reducir el padding superior en pantallas muy pequeñas */
-    }
-
-    .servicios-ul {
-        font-size: 18px; /* Ajustar más el tamaño de fuente en pantallas muy pequeñas */
-    }
+.subir-bajar {
+  animation: subirBajar 2s infinite ease-in-out; /* 2s duración del ciclo */
 }

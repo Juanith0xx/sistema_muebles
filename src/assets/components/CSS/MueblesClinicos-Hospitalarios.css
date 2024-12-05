@@ -1,5 +1,24 @@
 
-.muebles-hospital{
-    padding-top: 5%;
+.muebles-hospital {
+    margin-top: 8%;
     text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: bold;
+    color: #555555;
+}
+
+/* Responsivo: Para pantallas pequeñas (por ejemplo, móviles) */
+@media (max-width: 768px) {
+    .muebles-hospital {
+        margin-top: 5%; /* Reducir el margen superior */
+        font-size: 1.2rem; /* Ajustar el tamaño de la fuente */
+    }
+}
+
+/* Responsivo: Para pantallas aún más pequeñas (por ejemplo, móviles en modo apaisado) */
+@media (max-width: 480px) {
+    .muebles-hospital {
+        margin-top: 4%; /* Ajuste adicional del margen superior */
+        font-size: 1rem; /* Reducir aún más el tamaño de la fuente */
+    }
 }
