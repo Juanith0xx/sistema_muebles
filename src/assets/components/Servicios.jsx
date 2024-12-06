@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./CSS/Servicios.css";
 
 const Servicios = () => {
@@ -21,19 +21,29 @@ const Servicios = () => {
         <div className="servicios-grid">
           {[
             {
-              src: "img/corte.png",
+              src: "img/maquina1.jpg",
               alt: "Servicio de Dimensionado",
               titulo: "Servicio de Dimensionado",
             },
             {
-              src: "img/pegado.png",
+              src: "img/maquina2.jpg",
               alt: "Servicio de Pegado de Canto",
               titulo: "Servicio de Pegado de Canto",
             },
             {
-              src: "img/prensado.png",
+              src: "img/maquina3.jpg",
               alt: "Servicio de Mecanizado en CNC",
               titulo: "Servicio de Mecanizado en CNC",
+            },
+            {
+              src: "img/maquina4.png",
+              alt: "Servicio de Mecanizado en CNC",
+              titulo: "Servicio de Prensado",
+            },
+            {
+              src: "img/maquina5.jpg",
+              alt: "Servicio de Mecanizado en CNC",
+              titulo: "Servicios de fabricación integral sin instalación",
             },
           ].map((servicio, index) => (
             <div className="servicio-item" key={index}>

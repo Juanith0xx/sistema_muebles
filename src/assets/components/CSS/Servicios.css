@@ -1,6 +1,7 @@
 /* Estilo para el título principal de servicios */
 .servicios-titulo {
     font-size: 2rem;
+    font-family: "Poppins", serif;
     font-weight: bold;
     color: #333; /* Asegura que el color sea visible */
     text-align: center;
@@ -27,7 +28,8 @@
   /* Estilo para el título de cada servicio */
   .servicio-titulo {
     font-size: 1.5rem;
-    color: #000; /* Color negro para garantizar visibilidad */
+    font-family: "Poppins", serif;
+    color: #555555; /* Color negro para garantizar visibilidad */
     margin-top: 1rem; /* Espacio entre la imagen y el título */
   }
   
