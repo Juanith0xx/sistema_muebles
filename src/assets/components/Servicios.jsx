@@ -46,7 +46,10 @@ const Servicios = () => {
               titulo: "Servicios de fabricación integral sin instalación",
             },
           ].map((servicio, index) => (
-            <div className="servicio-item" key={index}>
+            <div
+              className={`servicio-item ${index === 3 || index === 4 ? "segunda-fila" : ""}`}
+              key={index}
+            >
               <img
                 src={servicio.src}
                 alt={servicio.alt}

@@ -1,0 +1,30 @@
+.scroll-to-top {
+    position: fixed; /* Fijo en la pantalla */
+    bottom: 20px; /* Separación desde la parte inferior */
+    right: 20px; /* Separación desde el lado derecho */
+    background-color:  #b75145; /* Color de fondo */
+    color: white; /* Color del texto o ícono */
+    border: none; /* Sin bordes */
+    border-radius: 50%; /* Forma redonda */
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    display: flex; /* Alinear contenido */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
+    transition: opacity 0.3s ease; /* Suavidad al mostrar/ocultar */
+    opacity: 0; /* Invisible por defecto */
+    visibility: hidden; /* Oculto por defecto */
+  }
+  
+  .scroll-to-top.show {
+    opacity: 1; /* Visible */
+    visibility: visible; /* Mostrado */
+  }
+  
+  .scroll-to-top:hover {
+    background-color:  #c03e2f; /* Color más oscuro al pasar el ratón */
+  }
+  

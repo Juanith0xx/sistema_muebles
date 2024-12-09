@@ -9,6 +9,7 @@ import Puertas from "./assets/components/Puertas";
 import Servicios from "./assets/components/Servicios";
 import ClientesSatisfechos from "./assets/components/ClientesSatisfechos";
 import Contacto from "./assets/components/Contacto";
+import ScrollToTop from './assets/components/ScrollToTop';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         v7_relativeSplatPath: true, // Activa la compatibilidad con el comportamiento de rutas de v7
       }}
     >
+      <ScrollToTop />
       <Routes>
         {/* Layout general con el Navbar */}
         <Route path="/" element={<Layout />}>
