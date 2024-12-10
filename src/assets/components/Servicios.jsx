@@ -19,7 +19,7 @@ const Servicios = () => {
       <h1 className="servicios-titulo">Nuestros Servicios</h1>
       <Container>
         <div className="servicios-grid">
-          {[
+          {[ 
             {
               src: "img/maquina1.jpg",
               alt: "Servicio de Dimensionado",
@@ -37,17 +37,17 @@ const Servicios = () => {
             },
             {
               src: "img/maquina4.png",
-              alt: "Servicio de Mecanizado en CNC",
+              alt: "Servicio de Prensado",
               titulo: "Servicio de Prensado",
             },
             {
               src: "img/maquina5.jpg",
-              alt: "Servicio de Mecanizado en CNC",
-              titulo: "Servicios de fabricación integral sin instalación",
+              alt: "Servicios de fabricación integral sin instalación",
+              titulo: "Servicios de fabricación integral sin instalación",
             },
           ].map((servicio, index) => (
             <div
-              className={`servicio-item ${index === 3 || index === 4 ? "segunda-fila" : ""}`}
+              className={`servicio-item ${index >= 3 ? "segunda-fila" : ""}`}
               key={index}
             >
               <img

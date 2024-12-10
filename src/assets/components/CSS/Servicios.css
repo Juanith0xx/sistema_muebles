@@ -1,77 +1,50 @@
-/* Estilo para el título principal de servicios */
-.servicios-titulo {
-  font-size: 2rem;
-  font-family: "Poppins", serif;
-  font-weight: bold;
-  color: #333; /* Asegura que el color sea visible */
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-/* Estilo para la cuadrícula */
+/* Archivo CSS */
 .servicios-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
   gap: 2rem;
   padding: 1rem;
+  justify-content: center; /* Centra la cuadrícula */
 }
 
-/* Estilo de cada servicio */
+/* Posicionar elementos específicos */
+.servicio-item:nth-child(4) {
+  grid-column: 1; /* Coloca "Prensado" en la segunda columna */
+  grid-row: 2; /* Asegura que esté en la segunda fila */
+}
+
+.servicio-item:nth-child(5) {
+  grid-column: 3; /* Coloca "Fabricación" en la tercera columna */
+  grid-row: 2; /* Asegura que esté en la segunda fila */
+}
+
 .servicio-item {
   background-color: #f9f9f9;
+  color: #555555;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Estilo para el título de cada servicio */
-.servicio-titulo {
-  font-size: 1.5rem;
-  font-family: "Poppins", serif;
-  color: #555555; /* Color negro para garantizar visibilidad */
-  margin-top: 1rem; /* Espacio entre la imagen y el título */
+.servicio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para las imágenes */
 .servicio-imagen {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-/* Estilo para los párrafos de descripción */
-.servicio-item p {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 0.5rem;
-}
-
-/* Centrar las imágenes de la segunda columna */
-.servicios-grid .segunda-columna .servicio-imagen {
-  margin: 0 auto; /* Centrar horizontalmente */
-  display: block; /* Asegurar que la imagen sea un elemento bloque */
-}
-
-.segunda-fila {
-  justify-self: center; /* Centra el elemento en el eje horizontal */
-  grid-column: span ; /* Opción: ocupa más espacio horizontal si es necesario */
+  animation: subirBajar 2s infinite ease-in-out;
 }
 
 @keyframes subirBajar {
-  0%,
-  100% {
-    transform: translateY(0); /* Posición inicial */
+  0%, 100% {
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Subir */
+    transform: translateY(-10px);
   }
-}
-
-.hover-subir-bajar {
-  animation: subirBajar 1.5s infinite ease-in-out; /* Duración de 1.5 segundos */
-}
-
-.subir-bajar {
-  animation: subirBajar 2s infinite ease-in-out; /* 2s duración del ciclo */
 }
