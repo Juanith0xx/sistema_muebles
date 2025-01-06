@@ -13,7 +13,7 @@ const NuestraFabrica = () => {
         </div>
         <video
   className="video-fabrica"
-  src="public/nuestra-fabrica.mp4"
+  src="nuestra-fabrica.mp4"
   type="video/mp4" // Especifica explícitamente el tipo MIME
   width="1050"
   height="500"

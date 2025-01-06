@@ -1,7 +1,7 @@
 /* Estilo general del pie de página */
 .site-footer {
-  background-color: #fff;
-  color: black;
+  background-color:#b75145;
+  color: white;
   padding: 14px;
   font-size: 1vw;
   text-align: center;
@@ -10,7 +10,7 @@
 
 /* Título dentro del pie de página */
 .footer-h5 {
-  padding-top: 7%;
+  padding-top: 3%;
   font-family: "Poppins", serif;
   font-weight: bold;
   font-size: 1.3rem;
@@ -19,7 +19,7 @@
 /* Enlaces dentro del pie de página */
 .footer-links a,
 .footer-social a {
-  color: black;
+  color: white;
   margin: 0 8px;
   text-decoration: none;
   font-size: 1.9rem;
