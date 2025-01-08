@@ -29,9 +29,9 @@ function MyNavbar() {
             Proyectos
           </Dropdown.Toggle>
           <Dropdown.Menu className='dropdown-menu'>
-          <Dropdown.Item href='/Oficinas-Corporativas'>Oficinas Corporativas</Dropdown.Item>
-                <Dropdown.Item href='/Muebles-Clinicos-Hospitalarios'>Muebles Clinicos - Hospitalarios</Dropdown.Item>
-                <Dropdown.Item href='/puertas'>Puertas</Dropdown.Item>
+          <Dropdown.Item href='/Oficinas-Corporativas' disabled>Oficinas Corporativas</Dropdown.Item>
+                <Dropdown.Item href='/Muebles-Clinicos-Hospitalarios'disabled>Muebles Clinicos - Hospitalarios</Dropdown.Item>
+                <Dropdown.Item href='/puertas' disabled>Puertas - Revestimientos Fenolicos - Marcos Telescopicos</Dropdown.Item>
                 <Dropdown.Item href='/servicios'>Servicios</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

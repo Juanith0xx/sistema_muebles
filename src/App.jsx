@@ -11,6 +11,7 @@ import ClientesSatisfechos from "./assets/components/ClientesSatisfechos";
 import Contacto from "./assets/components/Contacto";
 import ScrollToTop from './assets/components/ScrollToTop';
 
+
 function App() {
   return (
     <Router
@@ -34,6 +35,7 @@ function App() {
           <Route path="Muebles-Clinicos-Hospitalarios" element={<MueblesHospitalarios />} />
           <Route path="puertas" element={<Puertas />} />
           <Route path="servicios" element={<Servicios />} />
+
         </Route>
       </Routes>
     </Router>

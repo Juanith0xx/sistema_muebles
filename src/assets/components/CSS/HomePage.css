@@ -1,20 +1,15 @@
 /* Contenedor principal con imagen de fondo */
 .content-home {
   background-image: url(/img/forus.jpg); /* Imagen de fondo */
-  background-size: cover; /* Imagen cubre todo el contenedor */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen */
-  width: 100vw; /* Ancho completo de la ventana */
-  padding-bottom: 4rem;
+  width: 88%; /* Cubre todo el ancho */ height: 50vh; /* Cubre toda la altura de la ventana */
+  padding-bottom: 8rem; 
   padding-top: 5%;
-  border-radius: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Alinea el contenido a la izquierda */
-  justify-content: center; /* Centra verticalmente si hay más contenido */
-  text-align: left; /* Asegura que el texto esté alineado a la izquierda */
-  padding-left: 5%; /* Agrega espacio desde el borde izquierdo */
+  padding-left: 5%;
+  margin-left: 9%;
+  
 }
-
 /* Título principal */
 .h1-home {
   font-size: 2.5rem; /* Tamaño grande por defecto */
@@ -48,22 +43,3 @@
   background-color: #a44238;
 }
 
-/* Media Queries para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .h1-home {
-    font-size: 2rem; /* Reduce el tamaño del título en móviles */
-    margin-bottom: 1rem;
-  }
-
-  .content-home {
-    padding: 2rem 1rem;
-    border-radius: 0;
-    align-items: center; /* Centra horizontalmente en móviles */
-  }
-
-  .boton-p {
-    width: 100%; /* Botón ocupa todo el ancho disponible */
-    padding: 1rem;
-    max-width: none; /* Permite que ocupe el ancho completo */
-  }
-}
