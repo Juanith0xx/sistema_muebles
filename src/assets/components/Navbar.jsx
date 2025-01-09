@@ -2,8 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Dropdown } from 'react-bootstrap';
-import "./CSS/Navbar.css"
-
+import { Link } from 'react-router-dom';  // Usamos Link de react-router-dom
+import "./CSS/Navbar.css";
 
 function MyNavbar() {
   return (
@@ -21,21 +21,22 @@ function MyNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto custom-nav-spacing">
-          <Nav.Link href='#nosotros'>Nosotros</Nav.Link>
-            <Nav.Link href='#clientes-satisfechos'>Nuestros Clientes</Nav.Link>
-            <Nav.Link href='#fabrica'>Nuestra Fábrica</Nav.Link>
+            {/* Usamos Link para que react-router-dom maneje las rutas */}
+            <Nav.Link as={Link} to="/#nosotros">Nosotros</Nav.Link>
+            <Nav.Link as={Link} to="/#clientes-satisfechos">Nuestros Clientes</Nav.Link>
+            <Nav.Link as={Link} to="/#fabrica">Nuestra Fábrica</Nav.Link>
             <Dropdown>
-          <Dropdown.Toggle as={Nav.Link} id="dropdown-proyectos">
-            Proyectos
-          </Dropdown.Toggle>
-          <Dropdown.Menu className='dropdown-menu'>
-          <Dropdown.Item href='/Oficinas-Corporativas' disabled>Oficinas Corporativas</Dropdown.Item>
-                <Dropdown.Item href='/Muebles-Clinicos-Hospitalarios'disabled>Muebles Clinicos - Hospitalarios</Dropdown.Item>
-                <Dropdown.Item href='/puertas' disabled>Puertas - Revestimientos Fenolicos - Marcos Telescopicos</Dropdown.Item>
-                <Dropdown.Item href='/servicios'>Servicios</Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-          <Nav.Link href='#contacto'>Contacto</Nav.Link>
+              <Dropdown.Toggle as={Nav.Link} id="dropdown-proyectos">
+                Proyectos
+              </Dropdown.Toggle>
+              <Dropdown.Menu className="dropdown-menu">
+                <Dropdown.Item href="/Oficinas-Corporativas" disabled>Oficinas Corporativas</Dropdown.Item>
+                <Dropdown.Item href="/Muebles-Clinicos-Hospitalarios" disabled>Muebles Clínicos - Hospitalarios</Dropdown.Item>
+                <Dropdown.Item href="/puertas" disabled>Puertas - Revestimientos Fenólicos - Marcos Telescópicos</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/servicios">Servicios</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+            <Nav.Link as={Link} to="/#contacto">Contacto</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

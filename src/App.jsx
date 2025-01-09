@@ -10,7 +10,7 @@ import Servicios from "./assets/components/Servicios";
 import ClientesSatisfechos from "./assets/components/ClientesSatisfechos";
 import Contacto from "./assets/components/Contacto";
 import ScrollToTop from './assets/components/ScrollToTop';
-
+import ScrollToSection from "./assets/components/ScrollToSection"; // Asegúrate de importar ScrollToSection
 
 function App() {
   return (
@@ -20,9 +20,11 @@ function App() {
       }}
     >
       <ScrollToTop />
+      
       <Routes>
         {/* Layout general con el Navbar */}
         <Route path="/" element={<Layout />}>
+          
           {/* Rutas principales */}
           <Route index element={<Home />} />
           <Route path="nosotros" element={<Nosotros />} />
@@ -35,9 +37,15 @@ function App() {
           <Route path="Muebles-Clinicos-Hospitalarios" element={<MueblesHospitalarios />} />
           <Route path="puertas" element={<Puertas />} />
           <Route path="servicios" element={<Servicios />} />
-
+          
         </Route>
       </Routes>
+      
+      {/* Asegúrate de manejar los anclajes con ScrollToSection */}
+      <ScrollToSection sectionId="nosotros" />
+      <ScrollToSection sectionId="clientes-satisfechos" />
+      <ScrollToSection sectionId="fabrica" />
+      <ScrollToSection sectionId="contacto" />
     </Router>
   );
 }

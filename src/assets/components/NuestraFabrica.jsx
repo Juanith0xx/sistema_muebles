@@ -2,7 +2,7 @@ import "./CSS/NuestraFabrica.css";
 
 const NuestraFabrica = () => {
   return (
-    <div className='fabrica-home'>
+    <div id="fabrica" className='fabrica-home'>
       <h1 className='nuestraf-h1'>Nuestra Fábrica</h1>
       <div className='content-fabrica'>
         <div className='text-fabrica'>
