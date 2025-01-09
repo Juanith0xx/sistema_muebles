@@ -1,4 +1,4 @@
-import "./CSS/NuestraFabrica.css";
+import "../CSS/NuestraFabrica.css";
 
 const NuestraFabrica = () => {
   return (

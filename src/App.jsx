@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Layout from "./assets/components/Layout";
-import Home from "./assets/components/Home";
-import Nosotros from "./assets/components/Nosotros";
-import NuestraFabrica from "./assets/components/NuestraFabrica";
-import OficinasCorporativas from "./assets/components/OficinasCorporativas";
-import MueblesHospitalarios from "./assets/components/MueblesClinicos-Hospitalarios";
-import Puertas from "./assets/components/Puertas";
-import Servicios from "./assets/components/Servicios";
-import ClientesSatisfechos from "./assets/components/ClientesSatisfechos";
-import Contacto from "./assets/components/Contacto";
-import ScrollToTop from './assets/components/ScrollToTop';
-import ScrollToSection from "./assets/components/ScrollToSection"; // Asegúrate de importar ScrollToSection
+import Layout from "./components/Layout";
+import Home from "./components/Home";
+import Nosotros from "./components/Nosotros";
+import NuestraFabrica from "./components/NuestraFabrica";
+import OficinasCorporativas from "./components/OficinasCorporativas";
+import MueblesHospitalarios from "./components/MueblesClinicos-Hospitalarios";
+import Puertas from "./components/Puertas";
+import Servicios from "./components/Servicios";
+import ClientesSatisfechos from "./components/ClientesSatisfechos";
+import Contacto from "./components/Contacto";
+import ScrollToTop from './components/ScrollToTop';
+import ScrollToSection from "./Utils/ScrollToSection"; // Asegúrate de importar ScrollToSection
 
 function App() {
   return (

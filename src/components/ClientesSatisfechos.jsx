@@ -1,6 +1,6 @@
 import Slider from "react-slick";
 import { Row, Col } from "react-bootstrap";
-import "./CSS/ClientesSatisfechos.css";
+import "../CSS/ClientesSatisfechos.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

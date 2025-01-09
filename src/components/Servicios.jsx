@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import "./CSS/Servicios.css";
+import "../CSS/Servicios.css";
 
 const Servicios = () => {
   const [activeIndex, setActiveIndex] = useState(0);

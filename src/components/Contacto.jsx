@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
-import "./CSS/Contacto.css" 
+import "../CSS/Contacto.css" 
 
 function ContactForm() {
   const [formData, setFormData] = useState({

@@ -1,4 +1,4 @@
-import "./CSS/MueblesClinicos-Hospitalarios.css";
+import "../CSS/MueblesClinicos-Hospitalarios.css";
 
 
 const MueblesHospitalarios = () => {

@@ -1,4 +1,4 @@
-import "./CSS/OficinasCorporativas.css";
+import "../CSS/OficinasCorporativas.css";
 import { TbZoom } from "react-icons/tb"; // Importar el ícono de zoom
 
 const MueblesOficina = () => {

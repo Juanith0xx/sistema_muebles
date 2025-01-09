@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';  // Usamos Link de react-router-dom
-import "./CSS/Navbar.css";
+import "../CSS/Navbar.css";
 
 function MyNavbar() {
   return (

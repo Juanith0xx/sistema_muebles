@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { BsArrowUpCircle } from "react-icons/bs"; // Importar el ícono
-import './CSS/ScrollToTop.css'; // Importar el CSS
+import '../CSS/ScrollToTop.css'; // Importar el CSS
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);

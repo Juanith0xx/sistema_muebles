@@ -55,8 +55,25 @@
   width: 100%;
 }
 
+.boton-p-f{
+    margin-top: 2%;
+    background-color: #b75145 !important;
+    border: none !important;
+    padding: 0.8rem 1.5rem !important;
+    font-size: 1rem !important;
+    border-radius: 5px !important;
+    color: white !important;
+    transition: background-color 0.3s ease !important;
+    font-family: "Poppins", serif !important;
+}
+
 .boton-p:hover {
   background-color: #a03e38;
+}
+
+.form-label{
+  font-family: "Poppins", sans-serif;
+ 
 }
 
 /* Media Queries para dispositivos móviles */

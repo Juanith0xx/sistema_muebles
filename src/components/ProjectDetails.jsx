@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import './ProjectDetails.css'; // Tus propios estilos opcionales lll
+import '../CSS/ProjectDetails.css'; // Tus propios estilos opcionales lll
 
 const projectData = {
   1: {
