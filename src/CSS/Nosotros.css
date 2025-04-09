@@ -1,4 +1,4 @@
-
+/* Estilos principales */
 .nosotros-home {
   text-align: center;
   margin: 2rem;
@@ -53,6 +53,7 @@
   font-family: "Poppins", serif;
   max-width: 300px;
   width: 100%;
+  padding-right: 2%;
 }
 
 .boton-p-f{
@@ -60,6 +61,7 @@
     background-color: #b75145 !important;
     border: none !important;
     padding: 0.8rem 1.5rem !important;
+    margin-right: 2%;
     font-size: 1rem !important;
     border-radius: 5px !important;
     color: white !important;
@@ -73,34 +75,88 @@
 
 .form-label{
   font-family: "Poppins", sans-serif;
- 
 }
 
 /* Media Queries para dispositivos móviles */
+
+/* Para pantallas con un ancho máximo de 768px (móviles y tabletas pequeñas) */
 @media (max-width: 768px) {
   .h1-nosotros {
-    font-size: 2rem;
-    text-align: center;
-    padding-left: 0;
+    font-size: 1.2rem !important; /* Reduce el tamaño de la fuente en móviles */
+    text-align: center; /* Centra el texto */
+    padding-left: 0; /* Elimina el padding izquierdo */
   }
 
   .content-nosotros {
-    flex-direction: column; /* Apila imagen y texto verticalmente */
-    align-items: center; /* Centra los elementos horizontalmente */
-    gap: 1rem;
+    flex-direction: column; /* Apila la imagen y el texto verticalmente */
+    align-items: center; /* Centra los elementos en el eje horizontal */
+    gap: 1.5rem; /* Espacio entre la imagen y el texto */
   }
 
   .imagen-nosotros, .text-nosotros {
-    max-width: 90%; /* Reduce el ancho máximo al 90% */
-    padding-left: 0;
+    max-width: 90%; /* Reduce el ancho máximo al 90% para las pantallas pequeñas */
+    padding-left: 0; /* Elimina el padding izquierdo */
   }
 
   .p-nosotros {
-    font-size: 1rem;
+    font-size: 1rem; /* Reduce el tamaño de la fuente del párrafo */
     text-align: center; /* Centra el texto */
   }
 
   .boton-p {
-    margin: 0 auto; /* Centra el botón */
+    margin: 0 auto; /* Centra el botón en pantallas pequeñas */
+  }
+
+  .boton-p-f {
+    margin: 1rem auto; /* Añade un margen superior e inferior para el botón */
+  }
+}
+
+/* Para pantallas muy pequeñas (máximo 480px, como móviles en modo vertical) */
+@media (max-width: 480px) {
+  .h1-nosotros {
+    font-size: 1.8rem; /* Reduce aún más el tamaño de la fuente en pantallas muy pequeñas */
+    padding-left: 0; /* Elimina el padding izquierdo */
+  }
+
+  .content-nosotros {
+    gap: 1rem; /* Reduce el espacio entre los elementos */
+  }
+
+  .imagen-nosotros, .text-nosotros {
+    max-width: 90%; /* Asegura que imagen y texto ocupen un 90% del ancho */
+  }
+
+  .p-nosotros {
+    font-size: 0.9rem; /* Disminuye el tamaño del texto */
+    line-height: 1.5; /* Ajusta el espaciado entre líneas */
+  }
+
+  .boton-p {
+    font-size: 0.9rem; /* Ajuste del tamaño del botón */
+  }
+
+  .boton-p-f {
+    font-size: 0.9rem; /* Ajuste del tamaño del botón secundario */
+  }
+}
+
+/* Para pantallas grandes (mayores a 1200px) */
+@media (min-width: 1200px) {
+  .h1-nosotros {
+    font-size: 2.5rem; /* Aumenta el tamaño de la fuente en pantallas grandes */
+    padding-left: 8%; /* Mantiene el padding izquierdo */
+  }
+
+  .content-nosotros {
+    gap: 3rem; /* Aumenta el espacio entre los elementos */
+  }
+
+  .imagen-nosotros {
+    max-width: 35%; /* La imagen ocupa un 35% del ancho */
+  }
+
+  .text-nosotros {
+    max-width: 50%; /* El texto ocupa un 50% del ancho */
   }
 }

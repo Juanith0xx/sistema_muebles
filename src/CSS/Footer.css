@@ -1,11 +1,13 @@
 /* Estilo general del pie de página */
 .site-footer {
-  background-color:#b75145;
+  background-color: #b75145;
   color: white;
   padding: 14px;
   font-size: 1vw;
   text-align: center;
-  margin: 2rem;
+  width: 102%; /* Asegura que el fondo llegue al ancho completo de la pantalla */
+  margin: 0; /* Elimina el margen para evitar que afecte el ancho */
+  box-sizing: border-box; /* Incluye padding y border dentro del ancho total */
 }
 
 /* Título dentro del pie de página */
@@ -42,13 +44,11 @@
   /* Ajuste del pie de página */
   .site-footer {
       font-size: 3vw; /* Aumenta el tamaño de la fuente en pantallas pequeñas */
-      padding: 10px; /* Reduce el padding en pantallas pequeñas */
-      margin: 1rem; /* Reduce el margen */
   }
 
   .footer-h5 {
       font-size: 1.1rem; /* Ajusta el tamaño del título */
-      padding-top: 5%; /* Ajusta el padding superior */
+      padding-top: 3% !important;  /* Ajusta el padding superior */
   }
 
   /* Ajuste de los enlaces */
@@ -60,6 +60,11 @@
   .footer-p,
   .footer-copyright {
       font-size: 0.9rem; /* Ajusta el tamaño de fuente de párrafos */
+  }
+
+  .navbar-collapse {
+    font-size: 0.8rem !important;
+    text-align: left !important;
   }
 }
 

@@ -3,13 +3,15 @@
   background-image: url(/img/forus.jpg); /* Imagen de fondo */
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-position: center; /* Centra la imagen */
-  width: 88%; /* Cubre todo el ancho */ height: 50vh; /* Cubre toda la altura de la ventana */
-  padding-bottom: 8rem; 
+  width: 88%; /* Cubre todo el ancho */
+  height: 50vh; /* Cubre toda la altura de la ventana */
+  padding-bottom: 8rem;
   padding-top: 5%;
   padding-left: 5%;
   margin-left: 9%;
-  
+  box-sizing: border-box; /* Para que el padding y el margen no afecten el ancho total */
 }
+
 /* Título principal */
 .h1-home {
   font-size: 2.5rem; /* Tamaño grande por defecto */
@@ -28,14 +30,15 @@
 /* Botón */
 .boton-p {
   margin-top: 2%;
-    background-color: #b75145 !important;
-    border: none !important;
-    padding: 0.8rem 1.2rem !important;
-    font-size: 1rem !important;
-    border-radius: 5px !important;
-    color: white !important;
-    transition: background-color 0.3s ease !important;
-    font-family: "Poppins", serif !important;
+  background-color: #b75145 !important;
+  border: none !important;
+  padding: 0.8rem 1.2rem !important;
+  font-size: 1rem !important;
+  border-radius: 5px !important;
+  color: white !important;
+  transition: background-color 0.3s ease !important;
+  font-family: "Poppins", serif !important;
+  display: inline-block;
 }
 
 /* Hover del botón */
@@ -43,3 +46,66 @@
   background-color: #a44238;
 }
 
+/* Media Queries para hacerlo responsivo */
+
+/* En pantallas más pequeñas, como móviles */
+@media screen and (max-width: 768px) {
+  .content-home {
+    width: 100%; /* El contenedor ocupa el 100% del ancho */
+    height: 40vh; /* Ajusta la altura para que no ocupe toda la pantalla en dispositivos pequeños */
+    padding-left: 3%; /* Reduce el padding */
+    padding-right: 3%; /* Añade padding en la parte derecha */
+    margin-left: 0; /* Elimina margen a la izquierda */
+  }
+
+  .h1-home {
+    font-size: 1.2rem !important; /* Reduce el tamaño de la fuente para pantallas más pequeñas */
+    text-align: center; /* Centra el texto */
+    padding-top: 15%;
+  }
+
+  .home-m {
+    margin: 1rem 0; /* Reduce los márgenes */
+  }
+
+  button.boton-p {
+    padding: 0.2rem 0.1rem !important; /* Reduce el tamaño del botón */
+    font-size: 0.8rem !important; /* Reduce el tamaño de la fuente del botón */
+  }
+}
+
+/* En pantallas muy pequeñas, como móviles en modo vertical */
+@media screen and (max-width: 480px) {
+  .content-home {
+    height: 35vh; /* Ajusta aún más la altura en pantallas muy pequeñas */
+    padding-top: 5%; /* Reduce el padding superior */
+    padding-bottom: 5rem; /* Ajusta el padding inferior */
+  }
+
+  .h1-home {
+    font-size: 1.6rem; /* Ajuste del tamaño de fuente */
+    text-align: center; /* Centrado del texto */
+  }
+
+  .boton-p {
+    width: 100%; /* Hace el botón más ancho en pantallas pequeñas */
+    padding: 0.7rem 0; /* Ajusta el padding */
+    font-size: 1rem !important; /* Tamaño de fuente adecuado */
+  }
+}
+
+/* En pantallas medianas, como tabletas */
+@media screen and (max-width: 1024px) {
+  .content-home {
+    width: 90%; /* Ajusta el contenedor para pantallas más grandes */
+    margin-left: 5%; /* Cambia el margen izquierdo */
+  }
+
+  .h1-home {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente */
+  }
+
+  .boton-p {
+    font-size: 1.1rem !important; /* Ajuste de la fuente */
+  }
+}

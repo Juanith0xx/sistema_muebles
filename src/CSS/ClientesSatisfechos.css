@@ -1,86 +1,90 @@
 .content-clientessatisfechos {
-    text-align: center;
-    margin: 2rem;
-  }
-  
+  text-align: center;
+  margin: 2rem;
+}
+
+.h-clientessatisfechos {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  padding-left: 9%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 140px; /* Altura fija para mantener uniformidad */
+  object-fit: cover; /* Recorta la imagen proporcionalmente */
+  border-radius: 8px; /* Esquinas redondeadas */
+  margin: 0 auto;
+}
+
+/* Estilo para las flechas del carrusel */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.carousel-title{
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  color: #555;
+  padding-top: 10px;
+
+}
+.slick-prev {
+  left: -50px; /* Ajuste de posición */
+}
+
+.slick-next {
+  right: -50px; /* Ajuste de posición */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  display: none; /* Ocultamos los iconos por defecto */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
   .h-clientessatisfechos {
-    font-size: 2.3rem;
-    margin-bottom: 1.5rem;
-    text-align: left;
-    font-family: "Poppins", serif;
-    font-weight: bold;
-    padding-left: 9%;
+    font-size: 1rem;
+    text-align: center; 
   }
-  
+
   .carousel-image {
-    width: 100%;
-    height: 140px; /* Altura fija para mantener uniformidad */
-    object-fit: cover; /* Recorta la imagen proporcionalmente */
-    border-radius: 8px; /* Esquinas redondeadas */
-    margin: 0 auto;
+    height: 120px ; /* Ajuste de altura en pantallas pequeñas */
   }
-  
-  /* Estilo para las flechas del carrusel */
+
   .slick-prev,
   .slick-next {
-    position: absolute;
-    top: 50%;
-    z-index: 1000;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+    width: 30px;
+    height: 30px;
   }
-  
-  .carousel-title{
-    font-family: "Poppins", serif;
-    font-weight: bold;
-    color: #555;
-    padding-top: 10px;
 
-  }
   .slick-prev {
-    left: -50px; /* Ajuste de posición */
+    left: -30px;
   }
-  
+
   .slick-next {
-    right: -50px; /* Ajuste de posición */
+    right: -30px;
   }
-  
-  .slick-prev:before,
-  .slick-next:before {
-    display: none; /* Ocultamos los iconos por defecto */
+
+  .carousel-title {
+    font-size: 1rem;
   }
-  
-  /* Responsividad */
-  @media (max-width: 768px) {
-    .h-clientessatisfechos {
-      font-size: 2rem;
-    }
-  
-    .carousel-image {
-      height: 120px; /* Ajuste de altura en pantallas pequeñas */
-    }
-  
-    .slick-prev,
-    .slick-next {
-      width: 30px;
-      height: 30px;
-    }
-  
-    .slick-prev {
-      left: -30px;
-    }
-  
-    .slick-next {
-      right: -30px;
-    }
-  }
-  
+}
